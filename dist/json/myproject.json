@@ -1,0 +1,17 @@
+[
+  {
+    "image": "/dist/myProject/dicoding.png",
+    "title": "Final Project Dicoding",
+    "description": "Final Project Website menggunakan html, css dan javascript Pada Kelas submission akhir Front end developer oleh Dicoding",
+    "link": "https://daveton22.github.io/FinalProjectDicoding/",
+    "direction": "left"
+  },
+
+  {
+    "image": "/dist/myProject/webtodolist.png",
+    "title": "Project Todo List MySkill",
+    "description": "Website todo list sederhana dari project akhir kelas html oleh MySkill",
+    "link": "https://daveton22.github.io/ProjectToDoList/",
+    "direction": "right"
+  }
+]

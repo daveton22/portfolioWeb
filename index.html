@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dave-Portfolio</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="icon" href="/dist/icon/logo.png" />
+    <!-- <script src="dist/js/defr.js"></script> -->
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="max-w-[1920px] h-[2000px] scroll-smooth">
+    <header
+      id="header"
+      class="font-quickSand flex transition-all duration-500 ease-in-out h-16 w-full m-auto justify-between items-center fixed top-0 z-50"
+    >
+      <!-- Navbar -->
+      <div class="mx-12 max-md:mx-5">
+        <h1 class="text-2xl text-[#ff5f5f]">&lt;Davefarfar&gt;</h1>
+      </div>
+      <button
+        id="hamburger-button"
+        class="hidden z-[101] mr-9 cursor-pointer max-md:block"
+      >
+        <img
+          class=""
+          id="hamburger-open"
+          src="dist/icon/hamburger.png"
+          alt="icon"
+          width="20"
+        />
+        <img
+          class="hidden"
+          id="hamburger-close"
+          src="dist/icon/close.png"
+          alt="icon"
+          width="20"
+        />
+      </button>
+      <nav
+        id="nav-menu"
+        class="flex max-md:fixed max-md:top-0 max-md:left-full max-md:flex-col max-md:mt-16 max-md:bg-slate-700 max-md:rounded-lg"
+      >
+        <ul class="flex text-white items-center cursor-pointer max-md:block">
+          <li class="mx-12 max-md:mx-3">
+            <a href="#home" class="underline-animation">Home</a>
+          </li>
+          <li class="mx-12 max-md:mx-3">
+            <a href="#about" class="underline-animation">About</a>
+          </li>
+          <li class="mx-12 max-md:mx-3">
+            <a href="#skills" class="underline-animation">Skills</a>
+          </li>
+          <li class="mx-12 max-md:mx-3">
+            <a href="#projects" class="underline-animation">Projects</a>
+          </li>
+        </ul>
+        <button
+          id="cvButton"
+          class="relative font-bold text-white px-6 py-2 rounded-md mx-12 max-md:mx-3 overflow-hidden border-solid border-2 border-[#2B2E4A] transition-all duration-500"
+          onmouseover="hoverLeft()"
+          onmouseout="hoverRight()"
+        >
+          <span
+            id="hover"
+            class="absolute bottom-0 left-0 w-full h-full bg-[#2B2E4A] z-0 transition-transform duration-500 transform translate-x-full"
+          ></span>
+          <span class="relative z-10"> Download CV </span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home -->
+      <section
+        id="home"
+        class="flex w-full h-[36em] max-md:h-[48em] bg-[#2B2E4A] overflow-hidden"
+      >
+        <div class="flex justify-between items-center w-full">
+          <div
+            class="w-auto ml-[12em] max-md:text-center max-md:m-0 max-md:flex max-md:flex-col max-md:items-center"
+          >
+            <h2 class="text-white font-bold text-4xl font-robotoMono">
+              Hi, My name is Dave
+            </h2>
+            <h2 class="text-white font-bold text-4xl font-robotoMono">
+              A Junior Front End Developer
+            </h2>
+            <div
+              id="profileMobile"
+              class="w-[280px] border-solid border-[10px] border-[#E84545] bg-[#E84545] rounded-lg hidden max-md:block max-md:my-3"
+            >
+              <img
+                src="/dist/profilePicture/picture3.jpg"
+                alt=""
+                class="rounded-lg object-cover w-full h-full m-0 p-0"
+              />
+            </div>
+            <p
+              class="text-white font-light text-sm my-3 max-w-[500px] font-robotoMono max-md:max-w-[380px]"
+            >
+              I am a student at Amikom University Yogyakarkarta majoring in
+              informatics in the 3rd semesterc and come from the province of
+              Maluku, Indonesia. I am currently focusing on developing my front
+              end developer skills
+            </p>
+
+            <button
+              id="contactMe"
+              class="z-0 mt-5 relative font-bold text-lg p-2 border border-[#E84545] rounded-lg hover:bg-[#E84545] text-[#E84545] hover:text-white transition-all duration-300 ease-in-out"
+            >
+              Contact me
+            </button>
+          </div>
+          <div
+            class="w-[250px] h-full bg-[#E84545] relative max-md:w-0 max-md:hidden"
+            id="profileDekstop"
+          >
+            <div
+              class="w-[280px] absolute right-36 top-32 border-solid border-[10px] border-[#E84545] bg-[#E84545] rounded-lg"
+            >
+              <img
+                src="/dist/profilePicture/picture3.jpg"
+                alt=""
+                class="rounded-lg object-cover w-full h-full m-0 p-0"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="w-full bg-base h-[50rem] font-quickSand">
+        <h2 class="sr-only">hi</h2>
+        <div class="animate-bounce p-7 w-3 bg m-auto rounded-full text-red-600">
+          <i class="fa-2x fa-solid fa-arrow-down-long"></i>
+        </div>
+        <div class="justify-center items-center flex h-[37rem] bg-base">
+          <div
+            class="w-[25em] h-[20em] rounded-md bg-slate-400 overflow-hidden shadow-[5px_5px_16px_1px_rgba(0,0,0,0.3)]"
+          >
+            <div id="slider" class="w-[550%] h-auto flex">
+              <!-- Slide Image start -->
+              <div class="w-[20%]">
+                <img
+                  src="/dist/picture/foto1.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="w-[20%]">
+                <img
+                  src="/dist/picture/foto2.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="w-[20%]">
+                <img
+                  src="/dist/picture/foto3.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="w-[20%]">
+                <img
+                  src="/dist/picture/foto4.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="w-[20%]">
+                <img
+                  src="/dist/picture/foto5.jpg"
+                  alt=""
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <!-- Slide Image end -->
+            </div>
+          </div>
+
+          <article class="ml-9">
+            <h2 class="text-white font-bold text-[3rem] mb-3">About me</h2>
+            <p class="text-gray-200 font-thin w-[500px] mb-3">
+              Nama saya Daveton Piesco Far - Far. Saya lahir pada tanggal 21
+              November 2005 dan berasal dari maluku tenggara dan saat ini
+              menempuh pendidikan sebagai mahasiswa Informatika semester 3 dari
+              Universitas Amikom Yogyakarta angkatan 2023. saya mempunyai
+              pemahaman mengenai front end web. seperti html, css, javascript,
+              bootstrap, dan tailwind walaupun masih tidak terlalu ahli namun
+              saya masih tetap mengembangkan skill ini agar mampu menguasai nya.
+              saya juga aktif dalam mengikuti kegiatan mengenai seperti kursus
+              maupun organisasi kampus.
+            </p>
+            <hr />
+            <!-- Social Links -->
+            <div id="linkList" class="flex mt-4">
+              <button
+                class="mx-7 hover:scale-[1.2] transition-transform duration-200"
+                onclick="window.open('${link.link}', '_blank')"
+              >
+                <img src="${link.icon}" alt="linkedIn" width="${link.width}" />
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section
+        id="skills"
+        class="w-full flex flex-col items-center gap-x-12 bg-[#2B2E4A] font-quickSand"
+      >
+        <h2 class="text-white font-bold text-4xl mt-[2.5em] mb-[1em]">
+          Skills
+        </h2>
+        <div class="flex flex-wrap justify-center w-[80%] gap-12 mb-[5em]">
+          <div
+            class="rounded-3xl flex flex-col items-center w-[200px] h-[200px] bg-slate-700 text-center skillCard"
+          >
+            <img
+              class="mt-4 w-12 h-12"
+              src="dist/icon-skills/html.png"
+              alt=""
+            />
+            <h2 class="font-bold text-[21px] text-white">HTML</h2>
+            <div class="flex my-1">
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500">
+                <div class="w-[35px] rounded-sm h-2 bg-[#E84545]"></div>
+              </div>
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500">
+                <div class="w-[35px] rounded-sm h-2 bg-[#E84545]"></div>
+              </div>
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500">
+                <div class="w-[35px] rounded-sm h-2 bg-[#E84545]"></div>
+              </div>
+            </div>
+            <p class="text-white text-sm">
+              Dasar - Dasar HTML, Semantic HTML, Form.
+            </p>
+          </div>
+          <div
+            class="rounded-3xl flex flex-col items-center w-[200px] h-[200px] bg-slate-700 text-center skillCard"
+          >
+            <img
+              class="mt-4 w-12 h-12"
+              src="dist/icon-skills/css-3.png"
+              alt=""
+            />
+            <h2 class="font-bold text-[21px] text-white">CSS</h2>
+            <div class="flex my-1">
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500">
+                <div class="w-[35px] rounded-sm h-2 bg-[#E84545]"></div>
+              </div>
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500">
+                <div class="w-[35px] rounded-sm h-2 bg-[#E84545]"></div>
+              </div>
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500"></div>
+            </div>
+            <p class="text-white text-sm">
+              Dasar - Dasar CSS, Grid, Flex, Responsive.
+            </p>
+          </div>
+          <div
+            class="rounded-3xl flex flex-col items-center w-[200px] h-[200px] bg-slate-700 text-center skillCard"
+          >
+            <img class="mt-4 w-12 h-12" src="dist/icon-skills/js.png" alt="" />
+            <h2 class="font-bold text-[21px] text-white">javascript</h2>
+            <div class="flex my-1">
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500">
+                <div class="w-[35px] rounded-sm h-2 bg-[#E84545]"></div>
+              </div>
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500"></div>
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500"></div>
+            </div>
+            <p class="text-white text-sm">
+              Dasar - Dasar javascript, manipulasi DOM, web API, javascript
+              lanjutan.
+            </p>
+          </div>
+          <div
+            class="rounded-3xl flex flex-col items-center w-[200px] h-[200px] bg-slate-700 text-center skillCard"
+          >
+            <img
+              class="mt-4 w-12 h-12"
+              src="dist/icon-skills/icons8-tailwind-css-96.png"
+              alt=""
+            />
+            <h2 class="font-bold text-[21px] text-white">tailwind</h2>
+            <div class="flex my-1">
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500">
+                <div class="w-[35px] rounded-sm h-2 bg-[#E84545]"></div>
+              </div>
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500">
+                <div class="w-[35px] rounded-sm h-2 bg-[#E84545]"></div>
+              </div>
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500"></div>
+            </div>
+            <p class="text-white text-sm">Utility class</p>
+          </div>
+          <div
+            class="rounded-3xl flex flex-col items-center w-[200px] h-[200px] bg-slate-700 text-center skillCard"
+          >
+            <img
+              class="mt-4 w-12 h-12"
+              src="dist/icon-skills/media.png"
+              alt=""
+            />
+            <h2 class="font-bold text-[21px] text-white">bootstrap</h2>
+            <div class="flex my-1">
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500">
+                <div class="w-[35px] rounded-sm h-2 bg-[#E84545]"></div>
+              </div>
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500">
+                <div class="w-[35px] rounded-sm h-2 bg-[#E84545]"></div>
+              </div>
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500"></div>
+            </div>
+            <p class="text-white text-sm"></p>
+          </div>
+          <div
+            class="rounded-3xl flex flex-col items-center w-[200px] h-[200px] bg-slate-700 text-center skillCard"
+          >
+            <img
+              class="mt-4 w-12 h-12"
+              src="dist/icon-skills/physics.png"
+              alt=""
+            />
+            <h2 class="font-bold text-[21px] text-white">react</h2>
+            <div class="flex my-1">
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500">
+                <div class="w-[35px] rounded-sm h-2 bg-[#E84545]"></div>
+              </div>
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500"></div>
+              <div class="w-[35px] rounded-sm mx-1 h-2 bg-slate-500"></div>
+            </div>
+            <p></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Project -->
+      <section
+        id="projects"
+        class="w-full flex flex-col items-center gap-x-12 h-auto bg-[#292a41] overflow-hidden font-quickSand"
+      >
+        <h2 class="text-white font-bold text-4xl mt-[2.5em] mb-[1em]">
+          My Project
+        </h2>
+        <!-- Make grid with 2 coloumn -->
+        <div
+          id="projectList"
+          class="grid grid-cols-2 gap-16 max-w-[70%] h-[80%] md:grid max-md:grid-cols-1 justify-items-center mb-8"
+        ></div>
+      </section>
+    </main>
+
+    <footer
+      id="contact"
+      class="flex justify-center items-center w-full bg-[#2B2E4A] h-[30rem]"
+    >
+      <div
+        class="bg-[#23263d] w-[96%] h-auto flex justify-between rounded-md p-7"
+      >
+        <div class="flex items-center">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="flex flex-col items-start gap-5"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="9dcb4f62-0e3c-466d-9f0b-ba1661b2771b"
+            />
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              class="outline-none focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none border-gray-300 rounded-md"
+            />
+            <div class="flex gap-3">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+                class="focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none rounded-md"
+              />
+              <input
+                type="text"
+                name="phone"
+                placeholder="Your Phone Number"
+                required
+                class="focus:ring-2 focus:ring-gray-500 w-full px-10 py-5 text-white bg-slate-600 border-none rounded-md"
+              />
+            </div>
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+              class="focus:ring-2 focus:ring-gray-500 w-full h-32 px-10 py-2 text-white bg-slate-600 border-none rounded-md resize-none"
+            ></textarea>
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://web3forms.com/success"
+            />
+            <button
+              type="submit"
+              class="px-6 py-2 text-white bg-[#E84545] rounded-md shadow hover:bg-[#ce3d3d] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            >
+              Send
+            </button>
+          </form>
+        </div>
+        <div class="w-[50%]">
+          <div>
+            <h2 class="font-extrabold text-[24px] text-white">Hire me</h2>
+            <hr class="mt-2 mb-4 border-t-2 border-gray-300" />
+            <p class="text-gray-200">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis et
+              incidunt corrupti a aspernatur qui modi dicta dolore deleniti
+              voluptas porro dignissimos cupiditate ullam necessitatibus
+              repudiandae laborum, harum, tempore accusantium.
+            </p>
+          </div>
+          <div class="mt-8">
+            <ul class="flex flex-col gap-5">
+              <li class="flex gap-3 items-center">
+                <div
+                  class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center"
+                >
+                  <img
+                    src="dist/icon/telephone.png"
+                    alt="telephone"
+                    class="w-6 h-6"
+                  />
+                </div>
+
+                <p class="text-white">+62822-4838-6580</p>
+              </li>
+              <li class="flex gap-3 items-center">
+                <div
+                  class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center"
+                >
+                  <img src="dist/icon/email.png" alt="email" class="w-6 h-6" />
+                </div>
+
+                <p class="text-white">davefarfar21@gmail.com</p>
+              </li>
+              <li class="flex gap-3 items-center">
+                <div
+                  class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center"
+                >
+                  <img src="dist/icon/map.png" alt="map" class="w-6 h-6" />
+                </div>
+
+                <p class="text-white">
+                  Jl.Melati 3, Condongcatur, Sleman, DI Yogyakarta
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/dist/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
