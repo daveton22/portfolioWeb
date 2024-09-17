@@ -21,7 +21,7 @@
   <body class="max-w-[1920px] h-[2000px] scroll-smooth">
     <header
       id="header"
-      class="font-quickSand flex transition-all duration-500 ease-in-out h-16 w-full m-auto justify-between items-center fixed top-0 z-50"
+      class="font-quickSand flex transition-all duration-500 ease-in-out h-16 w-full m-auto justify-between items-center fixed top-0 z-[9999]"
     >
       <!-- Navbar -->
       <div class="mx-12 max-md:mx-5">
@@ -83,30 +83,34 @@
       <!-- Home -->
       <section
         id="home"
-        class="flex w-full h-[36em] max-md:h-[48em] bg-[#2B2E4A] overflow-hidden"
+        class="flex w-full h-[36em] max-md:h-[42em] bg-[#2B2E4A] overflow-hidden max-md:p-10"
       >
-        <div class="flex justify-between items-center w-full">
+        <div class="flex justify-between items-center w-full max-md:mt-16">
           <div
             class="w-auto ml-[12em] max-md:text-center max-md:m-0 max-md:flex max-md:flex-col max-md:items-center"
           >
-            <h2 class="text-white font-bold text-4xl font-robotoMono">
+            <h2
+              class="text-white font-bold text-4xl max-md:text-3xl font-robotoMono"
+            >
               Hi, My name is Dave
             </h2>
-            <h2 class="text-white font-bold text-4xl font-robotoMono">
-              A Junior Front End Developer
+            <h2
+              class="text-white font-bold text-4xl max-md:text-3xl font-robotoMono"
+            >
+              A Front End Developer
             </h2>
             <div
               id="profileMobile"
-              class="w-[280px] border-solid border-[10px] border-[#E84545] bg-[#E84545] rounded-lg hidden max-md:block max-md:my-3"
+              class="w-[230px] border-solid border-[3px] border-[#E84545] bg-[#E84545] rounded-full hidden max-md:block max-md:my-3"
             >
               <img
                 src="/dist/profilePicture/picture3.jpg"
                 alt=""
-                class="rounded-lg object-cover w-full h-full m-0 p-0"
+                class="rounded-full object-cover w-full h-full m-0 p-0"
               />
             </div>
             <p
-              class="text-white font-light text-sm my-3 max-w-[500px] font-robotoMono max-md:max-w-[380px]"
+              class="text-gray-100 font-light text-sm my-3 max-w-[500px] font-robotoMono max-md:max-w-[350px] max-md:text-[13px]"
             >
               I am a student at Amikom University Yogyakarkarta majoring in
               informatics in the 3rd semesterc and come from the province of
@@ -139,17 +143,23 @@
       </section>
 
       <!-- About -->
-      <section id="about" class="w-full bg-base h-[50rem] font-quickSand">
-        <h2 class="sr-only">hi</h2>
-        <div class="animate-bounce p-7 w-3 bg m-auto rounded-full text-red-600">
-          <i class="fa-2x fa-solid fa-arrow-down-long"></i>
-        </div>
-        <div class="justify-center items-center flex h-[37rem] bg-base">
+      <section
+        class="w-full bg-base h-[50rem] max-md:h-[45em] font-quickSand flex flex-col items-center"
+        id="about"
+      >
+        <h2
+          class="text-white font-bold text-4xl my-[7rem] max-md:mb-1 max-md:mt-[2.5em]"
+        >
+          About me
+        </h2>
+
+        <div
+          class="justify-center items-center flex h-[25rem] max-md:h-[30rem] max-md:mt-10 bg-base max-md:flex-col max-md:items-center"
+        >
           <div
-            class="w-[25em] h-[20em] rounded-md bg-slate-400 overflow-hidden shadow-[5px_5px_16px_1px_rgba(0,0,0,0.3)]"
+            class="w-[25em] h-[20em] max-md:h-[13em] max-md:w-[18em] rounded-md bg-slate-400 shadow-[5px_5px_16px_1px_rgba(0,0,0,0.3)] overflow-hidden max-md:mb-3"
           >
             <div id="slider" class="w-[550%] h-auto flex">
-              <!-- Slide Image start -->
               <div class="w-[20%]">
                 <img
                   src="/dist/picture/foto1.jpg"
@@ -185,31 +195,46 @@
                   class="object-cover w-full h-full"
                 />
               </div>
-              <!-- Slide Image end -->
             </div>
           </div>
 
-          <article class="ml-9">
-            <h2 class="text-white font-bold text-[3rem] mb-3">About me</h2>
-            <p class="text-gray-200 font-thin w-[500px] mb-3">
+          <article class="ml-9 max-md:m-0 max-md:text-center">
+            <p
+              class="text-gray-300 font-thin w-[500px] mb-1 max-md:text-center max-md:text-[11px] max-md:w-[300px]"
+            >
               Nama saya Daveton Piesco Far - Far. Saya lahir pada tanggal 21
               November 2005 dan berasal dari maluku tenggara dan saat ini
               menempuh pendidikan sebagai mahasiswa Informatika semester 3 dari
-              Universitas Amikom Yogyakarta angkatan 2023. saya mempunyai
-              pemahaman mengenai front end web. seperti html, css, javascript,
-              bootstrap, dan tailwind walaupun masih tidak terlalu ahli namun
-              saya masih tetap mengembangkan skill ini agar mampu menguasai nya.
-              saya juga aktif dalam mengikuti kegiatan mengenai seperti kursus
-              maupun organisasi kampus.
+              <span class="dot hidden max-md:inline">...</span>
+              <span class="readMoreText max-md:hidden">
+                Universitas Amikom Yogyakarta angkatan 2023. saya mempunyai
+                pemahaman mengenai front end web. seperti html, css, javascript,
+                bootstrap, dan tailwind walaupun masih tidak terlalu ahli namun
+                saya masih tetap mengembangkan skill ini agar mampu menguasai
+                nya. saya juga aktif dalam mengikuti kegiatan mengenai seperti
+                kursus maupun organisasi kampus.
+              </span>
             </p>
+            <button
+              id="readMorebutton"
+              class="text-[#E84545] hidden max-md:inline hover:text-[#ac3333] text-[9px]"
+            >
+              Read More
+            </button>
             <hr />
             <!-- Social Links -->
-            <div id="linkList" class="flex mt-4">
+            <div
+              id="linkList"
+              class="flex mt-4 max-md:flex max-md:justify-center"
+            >
               <button
-                class="mx-7 hover:scale-[1.2] transition-transform duration-200"
-                onclick="window.open('${link.link}', '_blank')"
+                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] bg-[#E84545] rounded-lg flex justify-center items-center"
+                onclick="window.open('https://www.facebook.com/syntic.loaded', '_blank')"
               >
-                <img src="${link.icon}" alt="linkedIn" width="${link.width}" />
+                <i
+                  class="fa-brands fa-facebook fa-2x"
+                  style="color: #292a41"
+                ></i>
               </button>
             </div>
           </article>

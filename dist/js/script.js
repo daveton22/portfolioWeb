@@ -57,18 +57,21 @@ fetch("/dist/json/myproject.json")
   });
 
 // links
-fetch("/dist/json/links.json")
+fetch("/dist/json/mylinks.json")
   .then((response) => response.json())
   .then((data) => {
     data.forEach((link) => {
-      let button = `<button
-                class="mx-7 hover:scale-[1.2] transition-transform duration-200"
-                onclick="window.open('${link.link}', '_blank')"
+      let card = `<button
+                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] bg-[#E84545] rounded-lg flex justify-center items-center"
+                onclick="window.open('${link.url}', '_blank')"
               >
-                <img src="${link.icon}" alt="linkedIn" width="${link.width}" />
+                <i
+                  class="fa-brands ${link.icon} fa-2x"
+                  style="color: #292a41"
+                ></i>
               </button>`;
 
-      document.getElementById("linkList").innerHTML += button;
+      document.getElementById("linkList").innerHTML += card;
     });
   });
 
@@ -203,14 +206,19 @@ function autoSlide() {
 
 setInterval(autoSlide, slideInterval);
 
-//responsive profile
-// const profileDekstop = document.querySelector("#profileDekstop");
-// const profileMobile = document.querySelector("#profileMobile");
+// making read more button
 
-// if (window.innerWidth < 768) {
-//   profileDekstop.classList.add("hidden");
-//   profileMobile.classList.remove("hidden");
-// } else {
-//   profileDekstop.classList.remove("hidden");
-//   profileMobile.classList.add("hidden");
-// }
+const readMore = document.querySelector("#readMorebutton");
+const readMoreText = document.querySelector(".readMoreText");
+const dot = document.querySelector(".dot");
+
+readMore.addEventListener("click", () => {
+  readMoreText.classList.toggle("max-md:hidden");
+  if (readMoreText.classList.contains("max-md:hidden")) {
+    readMore.textContent = "Read More";
+    dot.classList.remove("max-md:hidden");
+  } else {
+    readMore.textContent = "Read Less";
+    dot.classList.add("hidden");
+  }
+});
