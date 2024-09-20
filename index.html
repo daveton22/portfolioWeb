@@ -25,7 +25,7 @@
     >
       <!-- Navbar -->
       <div class="mx-12 max-md:mx-5">
-        <h1 class="text-2xl text-[#ff5f5f]">&lt;Davefarfar&gt;</h1>
+        <h1 class="text-2xl text-[#fd1717]">&lt;Davefarfar&gt;</h1>
       </div>
       <button
         id="hamburger-button"
@@ -83,7 +83,7 @@
       <!-- Home -->
       <section
         id="home"
-        class="flex w-full h-[36em] max-md:h-[42em] bg-[#2B2E4A] overflow-hidden max-md:p-10"
+        class="flex w-full h-[36em] 2xl:h-[55em] max-md:h-[42em] bg-[#2B2E4A] overflow-hidden max-md:p-10"
       >
         <div class="flex justify-between items-center w-full max-md:mt-16">
           <div
@@ -249,14 +249,38 @@
         <h2 class="text-white font-bold text-4xl mt-[2.5em] mb-[1em]">
           Skills
         </h2>
-        <div class="w-full border-2 border-solid border-white">
-          <h2 class="text-gray-300 text-2xl text-center">Language</h2>
-          <div class="flex flex-wrap justify-center w-[80%] gap-12 mb-[5em]">
+        <div class="w-full">
+          <h2 class="text-gray-300 text-2xl text-center">
+            Language, Framework & Library
+          </h2>
+          <div
+            id="language"
+            class="flex flex-wrap justify-center w-[80%] p-3 m-auto mb-[5em] gap-12"
+          >
             <div
-              class="rounded-3xl flex flex-col items-center w-auto h-auto p-4 text-center skillCard"
+              class="rounded-3xl flex flex-col items-center w-auto h-auto p-1 text-center skillCard"
             >
-              <img class="w-12 h-12" src="dist/icon-skills/html.png" alt="" />
-              <h2 class="font-bold text-[21px] text-white">HTML</h2>
+              <img
+                class="w-12 h-12"
+                src="dist/icon-skills/html.png"
+                alt="html"
+              />
+              <h2 class="font-bold text-[14px] text-white">HTML</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full">
+          <h2 class="text-gray-300 text-2xl text-center">Tools</h2>
+          <div
+            id="tools"
+            class="flex flex-wrap justify-center w-[80%] p-3 m-auto mb-[5em] gap-12"
+          >
+            <div
+              class="rounded-3xl flex flex-col items-center w-auto h-auto p-1 text-center skillCard"
+            >
+              <img class="w-12 h-12" src="dist/icon-tools/git.png" alt="git" />
+              <h2 class="font-bold text-[14px] text-white">Git</h2>
             </div>
           </div>
         </div>
@@ -273,18 +297,23 @@
         <!-- Make grid with 2 coloumn -->
         <div
           id="projectList"
-          class="grid grid-cols-2 gap-16 max-w-[70%] h-[80%] md:grid max-md:grid-cols-1 justify-items-center mb-8"
+          class="grid grid-cols-2 gap-16 max-w-[70%] h-auto md:grid max-md:grid-cols-1 justify-items-center mb-8"
         ></div>
       </section>
     </main>
 
     <footer
       id="contact"
-      class="flex justify-center items-center w-full bg-[#2B2E4A] h-[30rem]"
+      class="flex justify-center items-center w-full bg-[#2B2E4A] h-auto p-10 max-md:px-0"
     >
       <div
-        class="bg-[#23263d] w-[96%] h-auto flex justify-between rounded-md p-7"
+        class="bg-[#23263d] w-[96%] h-auto flex justify-between rounded-md p-7 max-md:flex-col max-md:w-[90%] max-md:p-5"
       >
+        <h2
+          class="font-extrabold text-[24px] hidden pb-2 text-white max-md:block"
+        >
+          Hire me
+        </h2>
         <div class="flex items-center">
           <form
             action="https://api.web3forms.com/submit"
@@ -338,11 +367,13 @@
             </button>
           </form>
         </div>
-        <div class="w-[50%]">
+        <div class="w-[50%] max-md:w-full">
           <div>
-            <h2 class="font-extrabold text-[24px] text-white">Hire me</h2>
-            <hr class="mt-2 mb-4 border-t-2 border-gray-300" />
-            <p class="text-gray-200">
+            <h2 class="font-extrabold text-[24px] text-white max-md:hidden">
+              Hire me
+            </h2>
+            <hr class="mt-2 mb-4 border-t-2 border-gray-300 max-md:hidden" />
+            <p class="text-gray-200 max-md:mt-3">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis et
               incidunt corrupti a aspernatur qui modi dicta dolore deleniti
               voluptas porro dignissimos cupiditate ullam necessitatibus
@@ -362,7 +393,7 @@
                   />
                 </div>
 
-                <p class="text-white">+62822-4838-6580</p>
+                <p class="text-white max-md:text-[14px]">+62822-4838-6580</p>
               </li>
               <li class="flex gap-3 items-center">
                 <div
@@ -371,7 +402,9 @@
                   <img src="dist/icon/email.png" alt="email" class="w-6 h-6" />
                 </div>
 
-                <p class="text-white">davefarfar21@gmail.com</p>
+                <p class="text-white max-md:text-[14px]">
+                  davefarfar21@gmail.com
+                </p>
               </li>
               <li class="flex gap-3 items-center">
                 <div
@@ -380,7 +413,7 @@
                   <img src="dist/icon/map.png" alt="map" class="w-6 h-6" />
                 </div>
 
-                <p class="text-white">
+                <p class="text-white max-md:text-[14px]">
                   Jl.Melati 3, Condongcatur, Sleman, DI Yogyakarta
                 </p>
               </li>

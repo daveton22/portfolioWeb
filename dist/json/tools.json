@@ -1,0 +1,10 @@
+[
+  {
+    "name": "GitHub",
+    "icons": "/dist/icon-tools/github.png"
+  },
+  {
+    "name": "VS Code",
+    "icons": "/dist/icon-tools/vscode.png"
+  }
+]

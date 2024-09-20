@@ -1,0 +1,18 @@
+[
+  {
+    "name": "JavaScript",
+    "icons": "/dist/icon-skills/js.png"
+  },
+  {
+    "name": "CSS",
+    "icons": "/dist/icon-skills/css-3.png"
+  },
+  {
+    "name": "Tailwind",
+    "icons": "/dist/icon-skills/tailwindcss.png"
+  },
+  {
+    "name": "Bootstrap",
+    "icons": "/dist/icon-skills/bootstrap.png"
+  }
+]

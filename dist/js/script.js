@@ -75,6 +75,38 @@ fetch("/dist/json/mylinks.json")
     });
   });
 
+// language icons
+fetch("/dist/json/language.json")
+  .then((response) => response.json())
+  .then((data) => {
+    data.forEach((language) => {
+      let card = `<div
+              class="rounded-3xl flex flex-col items-center w-auto h-auto p-1 text-center skillCard "
+            >
+              <img class="w-12 h-12" src="${language.icons}" alt="${language.name}" />
+              <h2 class="font-bold text-[14px] text-white">${language.name}</h2>
+            </div>`;
+
+      document.getElementById("language").innerHTML += card;
+    });
+  });
+
+// tools icons
+fetch("/dist/json/tools.json")
+  .then((response) => response.json())
+  .then((data) => {
+    data.forEach((tool) => {
+      let card = `<div
+              class="rounded-3xl flex flex-col items-center w-auto h-auto p-1 text-center skillCard "
+            >
+              <img class="w-12 h-12" src="${tool.icons}" alt="${tool.name}" />
+              <h2 class="font-bold text-[14px] text-white">${tool.name}</h2>
+            </div>`;
+
+      document.getElementById("tools").innerHTML += card;
+    });
+  });
+
 const hamButton = document.querySelector("#hamburger-button");
 const hamOpen = document.querySelector("#hamburger-open");
 const hamClose = document.querySelector("#hamburger-close");
@@ -157,22 +189,19 @@ document.addEventListener("scroll", () => {
 });
 
 // Scroll animation for skill cards
-let skillsCards = document.querySelectorAll(".skillCard");
-window.onscroll = () => {
-  let top = window.scrollY;
-  let windowHeight = window.innerHeight;
+window.addEventListener("scroll", () => {
+  const skillCards = document.querySelectorAll(".skillCard");
+  skillCards.forEach((skillCard) => {
+    const skillCardPosition = skillCard.offsetTop;
+    const scrollPosition = window.scrollY + window.innerHeight;
 
-  skillsCards.forEach((skillCard) => {
-    let offset = skillCard.offsetTop;
-    let height = skillCard.offsetHeight;
-
-    if (top + windowHeight >= offset && top < offset + height) {
+    if (scrollPosition > skillCardPosition) {
       skillCard.classList.add("animateSkill");
     } else {
       skillCard.classList.remove("animateSkill");
     }
   });
-};
+});
 
 // cv button links when clicked
 const cvButton = document.querySelector("#cvButton");
