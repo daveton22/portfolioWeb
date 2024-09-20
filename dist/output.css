@@ -1112,9 +1112,19 @@ video {
   font-weight: 100;
 }
 
+.text-\[\#903749\] {
+  --tw-text-opacity: 1;
+  color: rgb(144 55 73 / var(--tw-text-opacity));
+}
+
 .text-\[\#E84545\] {
   --tw-text-opacity: 1;
   color: rgb(232 69 69 / var(--tw-text-opacity));
+}
+
+.text-\[\#faeaea\] {
+  --tw-text-opacity: 1;
+  color: rgb(250 234 234 / var(--tw-text-opacity));
 }
 
 .text-\[\#fd1717\] {
@@ -1140,6 +1150,45 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#f0bcbc\] {
+  --tw-text-opacity: 1;
+  color: rgb(240 188 188 / var(--tw-text-opacity));
+}
+
+.text-\[\#fff3f3\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 243 243 / var(--tw-text-opacity));
+}
+
+.text-\[\#e4e4e4\] {
+  --tw-text-opacity: 1;
+  color: rgb(228 228 228 / var(--tw-text-opacity));
+}
+
+.text-\[\#eeeeee\] {
+  --tw-text-opacity: 1;
+  color: rgb(238 238 238 / var(--tw-text-opacity));
+}
+
+.text-\[\#5e1725\] {
+  --tw-text-opacity: 1;
+  color: rgb(94 23 37 / var(--tw-text-opacity));
+}
+
+.text-\[\#f15a78\] {
+  --tw-text-opacity: 1;
+  color: rgb(241 90 120 / var(--tw-text-opacity));
+}
+
+.text-\[\#f15a5a\] {
+  --tw-text-opacity: 1;
+  color: rgb(241 90 90 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .shadow {
@@ -1472,6 +1521,10 @@ html {
     margin-bottom: 0.75rem;
   }
 
+  .max-md\:mb-7 {
+    margin-bottom: 1.75rem;
+  }
+
   .max-md\:mt-10 {
     margin-top: 2.5rem;
   }
@@ -1480,20 +1533,16 @@ html {
     margin-top: 4rem;
   }
 
+  .max-md\:mt-2 {
+    margin-top: 0.5rem;
+  }
+
   .max-md\:mt-3 {
     margin-top: 0.75rem;
   }
 
   .max-md\:mt-\[2\.5em\] {
     margin-top: 2.5em;
-  }
-
-  .max-md\:mb-7 {
-    margin-bottom: 1.75rem;
-  }
-
-  .max-md\:mt-2 {
-    margin-top: 0.5rem;
   }
 
   .max-md\:block {
@@ -1585,10 +1634,6 @@ html {
     background-color: rgb(51 65 85 / var(--tw-bg-opacity));
   }
 
-  .max-md\:p-10 {
-    padding: 2.5rem;
-  }
-
   .max-md\:p-5 {
     padding: 1.25rem;
   }
@@ -1596,6 +1641,16 @@ html {
   .max-md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .max-md\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .max-md\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   .max-md\:text-center {
