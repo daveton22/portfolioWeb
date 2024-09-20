@@ -48,25 +48,25 @@
       </button>
       <nav
         id="nav-menu"
-        class="flex max-md:fixed max-md:top-0 max-md:left-full max-md:flex-col max-md:mt-16 max-md:bg-slate-700 max-md:rounded-lg"
+        class="flex max-md:fixed max-md:top-0 max-md:left-full max-md:flex-col max-md:mt-16 max-md:bg-[#23263d] max-md:p-4"
       >
         <ul class="flex text-white items-center cursor-pointer max-md:block">
-          <li class="mx-12 max-md:mx-3">
+          <li class="mx-12 max-md:mx-3 max-md:my-4">
             <a href="#home" class="underline-animation">Home</a>
           </li>
-          <li class="mx-12 max-md:mx-3">
+          <li class="mx-12 max-md:mx-3 max-md:my-4">
             <a href="#about" class="underline-animation">About</a>
           </li>
-          <li class="mx-12 max-md:mx-3">
+          <li class="mx-12 max-md:mx-3 max-md:my-4">
             <a href="#skills" class="underline-animation">Skills</a>
           </li>
-          <li class="mx-12 max-md:mx-3">
+          <li class="mx-12 max-md:mx-3 max-md:my-4">
             <a href="#projects" class="underline-animation">Projects</a>
           </li>
         </ul>
         <button
           id="cvButton"
-          class="relative font-bold text-white px-6 py-2 rounded-md mx-12 max-md:mx-3 overflow-hidden border-solid border-2 border-[#2B2E4A] transition-all duration-500"
+          class="relative font-bold text-white px-6 py-2 rounded-md mx-12 max-md:mx-3 overflow-hidden border-solid border-2 border-[#2B2E4A] max-md:border-[#E84545] max-md:border-solid max-md:border-2 transition-all duration-500"
           onmouseover="hoverLeft()"
           onmouseout="hoverRight()"
         >
@@ -83,7 +83,7 @@
       <!-- Home -->
       <section
         id="home"
-        class="flex w-full h-[36em] 2xl:h-[55em] max-md:h-[42em] bg-[#2B2E4A] overflow-hidden max-md:py-32 max-md:px-7"
+        class="flex w-full h-[36em] 2xl:h-[55em] max-md:h-[42em] bg-[#2B2E4A] overflow-hidden max-md:py-32 max-md:px-4"
       >
         <div class="flex justify-between items-center w-full max-md:mt-16">
           <div
@@ -229,8 +229,9 @@
               class="flex mt-4 max-md:flex max-md:justify-center"
             >
               <button
-                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] bg-[#E84545] rounded-lg flex justify-center items-center"
+                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] bg-[#E84545] rounded-lg flex justify-center items-center active:scale-[0.9]"
                 onclick="window.open('https://www.facebook.com/syntic.loaded', '_blank')"
+                ;
               >
                 <i
                   class="fa-brands fa-facebook fa-2x"

@@ -62,7 +62,7 @@ fetch("/dist/json/mylinks.json")
   .then((data) => {
     data.forEach((link) => {
       let card = `<button
-                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] bg-[#E84545] rounded-lg flex justify-center items-center"
+                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] bg-[#E84545] rounded-lg flex justify-center items-center active:scale-[0.9]"
                 onclick="window.open('${link.url}', '_blank')"
               >
                 <i
@@ -150,7 +150,8 @@ contactMe.addEventListener("mouseout", () => {
   whatsapp.classList.remove("block");
   whatsapp.classList.add("hidden");
 });
-
+// "https://www.facebook.com/syntic.loaded", "_blank";
+// onclick = "window.open('#')";
 // header navbar scroll will change bg color
 document.addEventListener("scroll", () => {
   const header = document.getElementById("header");
@@ -163,18 +164,22 @@ document.addEventListener("scroll", () => {
       header.classList.add("scrolled2");
       header.classList.remove("scrolled");
       // cv Button
-      cvDiv.classList.remove("bg-[#2B2E4A]");
-      cvDiv.classList.add("bg-[#E84545]");
-      cvButton.classList.remove("border-[#2B2E4A]");
-      cvButton.classList.add("border-[#E84545]");
+      if (window.innerWidth >= 768) {
+        cvDiv.classList.remove("bg-[#2B2E4A]");
+        cvDiv.classList.add("bg-[#E84545]");
+        cvButton.classList.remove("border-[#2B2E4A]");
+        cvButton.classList.add("border-[#E84545]");
+      }
     } else {
       header.classList.add("scrolled");
       header.classList.remove("scrolled2");
 
-      cvDiv.classList.remove("bg-[#2B2E4A]");
-      cvDiv.classList.add("bg-[#E84545]");
-      cvButton.classList.remove("border-[#2B2E4A]");
-      cvButton.classList.add("border-[#E84545]");
+      if (window.innerWidth >= 768) {
+        cvDiv.classList.remove("bg-[#2B2E4A]");
+        cvDiv.classList.add("bg-[#E84545]");
+        cvButton.classList.remove("border-[#2B2E4A]");
+        cvButton.classList.add("border-[#E84545]");
+      }
     }
 
     // ul
