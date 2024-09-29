@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dave-Portfolio</title>
     <link rel="stylesheet" href="dist/output.css" />
-    <link rel="icon" href="/dist/icon/logo.png" />
+
+    <link rel="icon" href="/dist/icon-skills/html.png" />
+
     <!-- <script src="dist/js/defr.js"></script> -->
 
     <!-- Font Awesome Icons -->
@@ -21,11 +23,13 @@
   <body class="max-w-[1920px] h-[2000px] scroll-smooth">
     <header
       id="header"
-      class="font-quickSand flex transition-all duration-500 ease-in-out h-16 w-full m-auto justify-between items-center fixed top-0 z-[9999]"
+      class="font-quickSand flex transition-all duration-[800ms] ease-in-out h-16 w-full m-auto justify-between items-center fixed top-0 z-[9999]"
     >
       <!-- Navbar -->
-      <div class="mx-12 max-md:mx-5">
-        <h1 class="text-2xl text-[#fd1717]">&lt;Davefarfar&gt;</h1>
+      <div
+        class="mx-12 max-md:mx-5 logo transition-all duration-[800ms] ease-in-out"
+      >
+        <h1 class="text-2xl text-[#00ADB5]">&lt;Davefarfar&gt;</h1>
       </div>
       <button
         id="hamburger-button"
@@ -50,7 +54,9 @@
         id="nav-menu"
         class="flex max-md:fixed max-md:top-0 max-md:left-full max-md:flex-col max-md:mt-16 max-md:bg-[#23263d] max-md:p-4"
       >
-        <ul class="flex text-white items-center cursor-pointer max-md:block">
+        <ul
+          class="nav-list flex font-bold items-center cursor-pointer max-md:block transition-all duration-[800ms] ease-in-out"
+        >
           <li class="mx-12 max-md:mx-3 max-md:my-4">
             <a href="#home" class="underline-animation">Home</a>
           </li>
@@ -66,13 +72,13 @@
         </ul>
         <button
           id="cvButton"
-          class="relative font-bold text-white px-6 py-2 rounded-md mx-12 max-md:mx-3 overflow-hidden border-solid border-2 border-secondary max-md:border-primary max-md:border-solid max-md:border-2 transition-all duration-500"
+          class="relative font-bold text-primary px-6 py-2 rounded-md mx-12 max-md:mx-3 overflow-hidden border-solid border-2 border-primary hover:text-white max-md:border-primary max-md:border-solid max-md:border-2 transition-all duration-500"
           onmouseover="hoverLeft()"
           onmouseout="hoverRight()"
         >
           <span
             id="hover"
-            class="absolute bottom-0 left-0 w-full h-full bg-secondary z-0 transition-transform duration-500 transform translate-x-full"
+            class="absolute bottom-0 left-0 w-full h-full bg-primary z-0 transition-transform duration-500 transform translate-x-full"
           ></span>
           <span class="relative z-10"> Download CV </span>
         </button>
@@ -90,13 +96,13 @@
             class="w-auto ml-[12em] max-md:text-center max-md:m-0 max-md:flex max-md:flex-col max-md:items-center"
           >
             <h2
-              class="text-[#eeeeee] font-bold text-4xl max-md:text-3xl font-robotoMono"
+              class="text-primary font-bold text-4xl max-md:text-3xl font-robotoMono"
             >
-              <span class="text-[#f15a5a]">Hi,</span> My name is
-              <span class="underline text-[#f15a5a]">Dave</span>
+              <span class="text-[#00ADB5]">Hi,</span> My name is
+              <span class="underline text-[#00ADB5]">Dave</span>
             </h2>
             <h2
-              class="text-[#eeeeee] font-bold text-4xl max-md:text-3xl font-robotoMono"
+              class="text-primary font-bold text-4xl max-md:text-3xl font-robotoMono"
             >
               A Front End Developer
             </h2>
@@ -111,27 +117,28 @@
               />
             </div>
             <p
-              class="text-gray-100 font-light text-sm my-3 max-w-[500px] font-robotoMono max-md:max-w-[350px] max-md:text-[13px]"
+              class="text-primary font-light text-sm my-3 max-w-[500px] font-robotoMono max-md:max-w-[350px] max-md:text-[13px]"
             >
-              I am a student at Amikom University Yogyakarkarta majoring in
-              informatics in the 3rd semesterc and come from the province of
-              Maluku, Indonesia. I am currently focusing on developing my front
-              end developer skills
+              A students from Amikom University Yogyakarta and currently
+              focusing on developing my front end developer skills
             </p>
 
             <button
               id="contactMe"
-              class="z-0 mt-5 relative font-bold text-lg p-2 border border-primary rounded-lg hover:bg-primary text-primary hover:text-white transition-all duration-300 ease-in-out max-md:mb-7 max-md:mt-2"
+              class="z-0 mt-5 relative font-bold text-lg p-2 border-solid border-2 border-primary rounded-lg hover:bg-primary text-primary hover:text-white transition-all duration-300 ease-in-out max-md:mb-7 max-md:mt-2"
             >
               Contact me
             </button>
           </div>
           <div
-            class="w-[250px] h-full bg-primary relative max-md:w-0 max-md:hidden"
+            class="w-[600px] h-full relative max-md:w-0 max-md:hidden"
             id="profileDekstop"
           >
             <div
-              class="w-[280px] absolute right-36 top-32 border-solid border-[10px] border-primary bg-primary rounded-lg"
+              class="w-[280px] h-[280px] absolute right-[130px] top-[123px] border-solid border-[10px] border-primary bg-primary rounded-lg"
+            ></div>
+            <div
+              class="w-[280px] absolute right-36 shadow-xl top-32 border-solid border-[5px] border-primary bg-primary rounded-lg"
             >
               <img
                 src="/dist/profilePicture/picture3.jpg"
@@ -145,20 +152,20 @@
 
       <!-- About -->
       <section
-        class="w-full bg-base h-[50rem] max-md:h-[45em] font-quickSand flex flex-col items-center"
+        class="w-full bg-[#24272c] h-[50rem] max-md:h-[45em] font-quickSand flex flex-col items-center"
         id="about"
       >
         <h2
-          class="text-white font-bold text-4xl my-[7rem] max-md:mb-1 max-md:mt-[2.5em]"
+          class="text-secondary font-bold text-4xl my-[7rem] max-md:mb-1 max-md:mt-[2.5em]"
         >
           About me
         </h2>
 
         <div
-          class="justify-center items-center flex h-[25rem] max-md:h-[30rem] max-md:mt-10 bg-base max-md:flex-col max-md:items-center"
+          class="justify-center items-center flex h-[25rem] max-md:h-[30rem] max-md:mt-10 max-md:flex-col max-md:items-center"
         >
           <div
-            class="w-[25em] h-[20em] max-md:h-[13em] max-md:w-[18em] rounded-md bg-slate-400 shadow-[5px_5px_16px_1px_rgba(0,0,0,0.3)] overflow-hidden max-md:mb-3"
+            class="w-[25em] h-[20em] max-md:h-[13em] max-md:w-[18em] rounded-md bg-primary shadow-[5px_5px_16px_1px_rgba(0,0,0,0.3)] overflow-hidden max-md:mb-3"
           >
             <div id="slider" class="w-[550%] h-auto flex">
               <div class="w-[20%]">
@@ -201,7 +208,7 @@
 
           <article class="ml-9 max-md:m-0 max-md:text-center">
             <p
-              class="text-gray-300 font-thin w-[500px] mb-1 max-md:text-center max-md:text-[11px] max-md:w-[300px]"
+              class="text-secondary font-thin w-[500px] mb-1 max-md:text-center max-md:text-[11px] max-md:w-[300px]"
             >
               Nama saya Daveton Piesco Far - Far. Saya lahir pada tanggal 21
               November 2005 dan berasal dari maluku tenggara dan saat ini
@@ -218,7 +225,7 @@
             </p>
             <button
               id="readMorebutton"
-              class="text-primary hidden max-md:inline hover:text-[#ac3333] text-[9px]"
+              class="text-primary hidden max-md:inline hover:text-black text-[9px]"
             >
               Read More
             </button>
@@ -248,7 +255,7 @@
         id="skills"
         class="w-full flex flex-col items-center gap-x-12 bg-secondary font-quickSand"
       >
-        <h2 class="text-white font-bold text-4xl mt-[2.5em] mb-[1em]">
+        <h2 class="text-primary font-bold text-4xl mt-[2.5em] mb-[1em]">
           Skills
         </h2>
         <div class="w-full">
@@ -291,16 +298,41 @@
       <!-- My Project -->
       <section
         id="projects"
-        class="w-full flex flex-col items-center gap-x-12 h-auto bg-[#292a41] overflow-hidden font-quickSand"
+        class="w-full flex flex-col items-center gap-x-12 h-auto bg-secondary overflow-hidden font-quickSand"
       >
-        <h2 class="text-white font-bold text-4xl mt-[2.5em] mb-[1em]">
+        <h2 class="text-primary font-bold text-4xl mt-[2.5em] mb-[1em]">
           My Project
         </h2>
         <!-- Make grid with 2 coloumn -->
         <div
           id="projectList"
           class="grid grid-cols-2 gap-16 max-w-[70%] h-auto md:grid max-md:grid-cols-1 justify-items-center mb-8"
-        ></div>
+        >
+          <div class="w-[24em] h-auto p-4 scroll relative">
+            <div class="rounded-lg">
+              <img
+                src="/dist/myProject/dicoding.png"
+                alt="project"
+                class="w-full h-[200px] rounded-lg text-white object-cover"
+              />
+            </div>
+
+            <div class="mt-2">
+              <p class="text-primary text-[13px]">
+                Final Project Website menggunakan html, css dan javascript Pada
+                Kelas submission akhir Front end developer oleh Dicoding
+              </p>
+              <a
+                class="text-primary font-semibold hover:opacity-0.8"
+                href="https://daveton22.github.io/FinalProjectDicoding/"
+                target="_blank"
+              >
+                Live Preview
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -426,9 +458,5 @@
     </footer>
 
     <script src="/dist/js/script.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
   </body>
 </html>

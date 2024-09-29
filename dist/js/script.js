@@ -5,20 +5,20 @@ fetch("/dist/json/myproject.json")
       let card = `<div
             class="w-[24em] h-auto p-4 scroll relative"
           >
-            <div class="bg-[#E84545] rounded-lg">
+            <div class= rounded-lg">
               <img
                 src="${project.image}"
                 alt="${project.title}"
-                class="w-full h-[200px] rounded-lg text-white mix-blend-darken object-cover"
+                class="w-full h-[200px] rounded-lg text-white object-cover"
               />
             </div>
 
             <div class="mt-2">
-              <p class="text-gray-200 text-[13px]">
+              <p class="text-primary text-[13px]">
                 ${project.description}
               </p>
               <a
-                class="text-[#E84545] font-semibold hover:opacity-0.8"
+                class="text-primary font-semibold hover:opacity-0.8"
                 href="${project.link}"
                 target="_blank"
               >
@@ -62,7 +62,7 @@ fetch("/dist/json/mylinks.json")
   .then((data) => {
     data.forEach((link) => {
       let card = `<button
-                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] bg-[#E84545] rounded-lg flex justify-center items-center active:scale-[0.9]"
+                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] bg-primary rounded-lg flex justify-center items-center active:scale-[0.9]"
                 onclick="window.open('${link.url}', '_blank')"
               >
                 <i
@@ -138,18 +138,6 @@ function hoverRight() {
   hover.classList.add("translate-x-full");
 }
 
-const contactMe = document.querySelector("#contactMe");
-const whatsapp = document.querySelector("#whatsapp");
-
-contactMe.addEventListener("mouseover", () => {
-  whatsapp.classList.remove("hidden");
-  whatsapp.classList.add("block");
-});
-
-contactMe.addEventListener("mouseout", () => {
-  whatsapp.classList.remove("block");
-  whatsapp.classList.add("hidden");
-});
 // "https://www.facebook.com/syntic.loaded", "_blank";
 // onclick = "window.open('#')";
 // header navbar scroll will change bg color
@@ -157,39 +145,30 @@ document.addEventListener("scroll", () => {
   const header = document.getElementById("header");
   const cvDiv = document.querySelector("#cvButton span");
   const cvButton = document.querySelector("#cvButton");
+  const navList = document.querySelector(".nav-list");
 
   if (window.scrollY > 20) {
-    // button
-    if (window.innerWidth >= 768) {
-      header.classList.add("scrolled2");
-      header.classList.remove("scrolled");
-      // cv Button
-      if (window.innerWidth >= 768) {
-        cvDiv.classList.remove("bg-[#2B2E4A]");
-        cvDiv.classList.add("bg-[#E84545]");
-        cvButton.classList.remove("border-[#2B2E4A]");
-        cvButton.classList.add("border-[#E84545]");
-      }
-    } else {
-      header.classList.add("scrolled");
-      header.classList.remove("scrolled2");
+    navList.classList.add("text-white");
+    navList.classList.remove("text-primary");
 
-      if (window.innerWidth >= 768) {
-        cvDiv.classList.remove("bg-[#2B2E4A]");
-        cvDiv.classList.add("bg-[#E84545]");
-        cvButton.classList.remove("border-[#2B2E4A]");
-        cvButton.classList.add("border-[#E84545]");
-      }
-    }
+    cvButton.classList.remove("border-primary");
+    cvButton.classList.add("border-white");
 
-    // ul
+    cvButton.classList.remove("text-primary");
+    cvButton.classList.add("text-white");
+
+    header.classList.add("scrolled2");
   } else {
-    header.classList.remove("scrolled", "scrolled2");
+    header.classList.remove("scrolled2");
 
-    cvDiv.classList.remove("bg-[#E84545]");
-    cvDiv.classList.add("bg-[#2B2E4A]");
-    cvButton.classList.remove("border-[#E84545]");
-    cvButton.classList.add("border-[#2B2E4A]");
+    cvButton.classList.remove("border-white");
+    cvButton.classList.add("border-primary");
+
+    cvButton.classList.remove("text-white");
+    cvButton.classList.add("text-primary");
+
+    navList.classList.add("text-primary");
+    navList.classList.remove("text-white");
   }
 });
 

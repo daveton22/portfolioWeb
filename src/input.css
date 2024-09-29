@@ -9,7 +9,7 @@ html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  background-color: #23263d;
+  background-color: var(--secondary);
 }
 
 @keyframes right-appear {
@@ -93,7 +93,7 @@ html {
 }
 
 .scrolled {
-  background-color: #23263d;
+  background-color: #24272c;
 
   height: 5rem;
   width: 100%;
@@ -102,7 +102,7 @@ html {
 }
 
 .scrolled2 {
-  background-color: #23263d;
+  background-color: #24272c;
   height: 3.6rem;
   margin: auto;
   width: 80%;
@@ -111,6 +111,9 @@ html {
   top: 1rem;
   border-radius: 0.5rem;
   z-index: 1000;
+}
+
+.white {
   color: #f7fafc;
 }
 
