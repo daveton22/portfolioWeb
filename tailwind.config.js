@@ -7,6 +7,10 @@ module.exports = {
       quickSand: ["Quicksand", "sans-serif"],
     },
     extend: {
+      colors: {
+        primary: "#E84545",
+        secondary: "#2B2E4A",
+      },
       animation: {
         "rotate-slow": "rotate-slow 3s ease forwards",
         "rotate-medium": "rotate-medium 3s ease forwards",

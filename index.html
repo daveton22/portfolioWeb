@@ -66,13 +66,13 @@
         </ul>
         <button
           id="cvButton"
-          class="relative font-bold text-white px-6 py-2 rounded-md mx-12 max-md:mx-3 overflow-hidden border-solid border-2 border-[#2B2E4A] max-md:border-[#E84545] max-md:border-solid max-md:border-2 transition-all duration-500"
+          class="relative font-bold text-white px-6 py-2 rounded-md mx-12 max-md:mx-3 overflow-hidden border-solid border-2 border-secondary max-md:border-primary max-md:border-solid max-md:border-2 transition-all duration-500"
           onmouseover="hoverLeft()"
           onmouseout="hoverRight()"
         >
           <span
             id="hover"
-            class="absolute bottom-0 left-0 w-full h-full bg-[#2B2E4A] z-0 transition-transform duration-500 transform translate-x-full"
+            class="absolute bottom-0 left-0 w-full h-full bg-secondary z-0 transition-transform duration-500 transform translate-x-full"
           ></span>
           <span class="relative z-10"> Download CV </span>
         </button>
@@ -83,7 +83,7 @@
       <!-- Home -->
       <section
         id="home"
-        class="flex w-full h-[36em] 2xl:h-[55em] max-md:h-[42em] bg-[#2B2E4A] overflow-hidden max-md:py-32 max-md:px-4"
+        class="flex w-full h-[36em] 2xl:h-[55em] max-md:h-[42em] bg-secondary overflow-hidden max-md:py-32 max-md:px-4"
       >
         <div class="flex justify-between items-center w-full max-md:mt-16">
           <div
@@ -102,7 +102,7 @@
             </h2>
             <div
               id="profileMobile"
-              class="w-[230px] border-solid border-[3px] border-[#E84545] bg-[#E84545] rounded-full hidden max-md:block max-md:my-3"
+              class="w-[230px] border-solid border-[3px] border-primary bg-primary rounded-full hidden max-md:block max-md:my-3"
             >
               <img
                 src="/dist/profilePicture/picture3.jpg"
@@ -121,17 +121,17 @@
 
             <button
               id="contactMe"
-              class="z-0 mt-5 relative font-bold text-lg p-2 border border-[#E84545] rounded-lg hover:bg-[#E84545] text-[#E84545] hover:text-white transition-all duration-300 ease-in-out max-md:mb-7 max-md:mt-2"
+              class="z-0 mt-5 relative font-bold text-lg p-2 border border-primary rounded-lg hover:bg-primary text-primary hover:text-white transition-all duration-300 ease-in-out max-md:mb-7 max-md:mt-2"
             >
               Contact me
             </button>
           </div>
           <div
-            class="w-[250px] h-full bg-[#E84545] relative max-md:w-0 max-md:hidden"
+            class="w-[250px] h-full bg-primary relative max-md:w-0 max-md:hidden"
             id="profileDekstop"
           >
             <div
-              class="w-[280px] absolute right-36 top-32 border-solid border-[10px] border-[#E84545] bg-[#E84545] rounded-lg"
+              class="w-[280px] absolute right-36 top-32 border-solid border-[10px] border-primary bg-primary rounded-lg"
             >
               <img
                 src="/dist/profilePicture/picture3.jpg"
@@ -218,7 +218,7 @@
             </p>
             <button
               id="readMorebutton"
-              class="text-[#E84545] hidden max-md:inline hover:text-[#ac3333] text-[9px]"
+              class="text-primary hidden max-md:inline hover:text-[#ac3333] text-[9px]"
             >
               Read More
             </button>
@@ -229,7 +229,7 @@
               class="flex mt-4 max-md:flex max-md:justify-center"
             >
               <button
-                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] bg-[#E84545] rounded-lg flex justify-center items-center active:scale-[0.9]"
+                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] bg-primary rounded-lg flex justify-center items-center active:scale-[0.9]"
                 onclick="window.open('https://www.facebook.com/syntic.loaded', '_blank')"
                 ;
               >
@@ -246,7 +246,7 @@
       <!-- Skills -->
       <section
         id="skills"
-        class="w-full flex flex-col items-center gap-x-12 bg-[#2B2E4A] font-quickSand"
+        class="w-full flex flex-col items-center gap-x-12 bg-secondary font-quickSand"
       >
         <h2 class="text-white font-bold text-4xl mt-[2.5em] mb-[1em]">
           Skills
@@ -306,7 +306,7 @@
 
     <footer
       id="contact"
-      class="flex justify-center items-center w-full bg-[#2B2E4A] h-auto p-10 max-md:px-0"
+      class="flex justify-center items-center w-full bg-secondary h-auto p-10 max-md:px-0"
     >
       <div
         class="bg-[#23263d] w-[96%] h-auto flex justify-between rounded-md p-7 max-md:flex-col max-md:w-[90%] max-md:p-5"
@@ -363,7 +363,7 @@
             />
             <button
               type="submit"
-              class="px-6 py-2 text-white bg-[#E84545] rounded-md shadow hover:bg-[#ce3d3d] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+              class="px-6 py-2 text-white bg-primary rounded-md shadow hover:bg-[#ce3d3d] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
               Send
             </button>
