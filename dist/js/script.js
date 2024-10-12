@@ -3,7 +3,7 @@ fetch("/dist/json/myproject.json")
   .then((data) => {
     data.forEach((project) => {
       let card = `<div
-            class="w-[24em] h-auto p-4 scroll relative"
+            class="w-[24em] h-auto p-4 scroll relative bg-primary rounded-md shadow-custom-dark"
           >
             <div class= rounded-lg">
               <img
@@ -14,17 +14,17 @@ fetch("/dist/json/myproject.json")
             </div>
 
             <div class="mt-2">
-              <p class="text-primary text-[13px]">
+            <a
+              class="text-tertiary font-semibold hover:opacity-0.8"
+              href="${project.link}"
+              target="_blank"
+            >
+              Live Preview
+              <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+              <p class="text-secondary text-[13px]">
                 ${project.description}
               </p>
-              <a
-                class="text-primary font-semibold hover:opacity-0.8"
-                href="${project.link}"
-                target="_blank"
-              >
-                Live Preview
-                <i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
             </div>
           </div>`;
 
@@ -62,12 +62,12 @@ fetch("/dist/json/mylinks.json")
   .then((data) => {
     data.forEach((link) => {
       let card = `<button
-                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] bg-primary rounded-lg flex justify-center items-center active:scale-[0.9]"
+                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px]  rounded-lg flex justify-center items-center active:scale-[0.9]"
                 onclick="window.open('${link.url}', '_blank')"
               >
                 <i
                   class="fa-brands ${link.icon} fa-2x"
-                  style="color: #292a41"
+                  style="color: #00adb5"
                 ></i>
               </button>`;
 
@@ -84,7 +84,7 @@ fetch("/dist/json/language.json")
               class="rounded-3xl flex flex-col items-center w-auto h-auto p-1 text-center skillCard "
             >
               <img class="w-12 h-12" src="${language.icons}" alt="${language.name}" />
-              <h2 class="font-bold text-[14px] text-white">${language.name}</h2>
+              <h2 class="font-bold text-[14px] text-primary">${language.name}</h2>
             </div>`;
 
       document.getElementById("language").innerHTML += card;
@@ -100,7 +100,7 @@ fetch("/dist/json/tools.json")
               class="rounded-3xl flex flex-col items-center w-auto h-auto p-1 text-center skillCard "
             >
               <img class="w-12 h-12" src="${tool.icons}" alt="${tool.name}" />
-              <h2 class="font-bold text-[14px] text-white">${tool.name}</h2>
+              <h2 class="font-bold text-[14px] text-primary">${tool.name}</h2>
             </div>`;
 
       document.getElementById("tools").innerHTML += card;
@@ -148,17 +148,26 @@ document.addEventListener("scroll", () => {
   const navList = document.querySelector(".nav-list");
 
   if (window.scrollY > 20) {
-    navList.classList.add("text-white");
-    navList.classList.remove("text-primary");
+    if (window.innerWidth > 1024) {
+      navList.classList.add("text-white");
+      navList.classList.remove("text-primary");
 
-    cvButton.classList.remove("border-primary");
-    cvButton.classList.add("border-white");
+      cvButton.classList.remove("border-primary");
+      cvButton.classList.add("border-white");
 
-    cvButton.classList.remove("text-primary");
-    cvButton.classList.add("text-white");
+      cvButton.classList.remove("text-primary");
+      cvButton.classList.add("text-white");
+    }
 
-    header.classList.add("scrolled2");
+    if (window.innerWidth < 1024) {
+      header.classList.add("scrolled");
+    }
+
+    if (window.innerWidth > 1024) {
+      header.classList.add("scrolled2");
+    }
   } else {
+    header.classList.remove("scrolled");
     header.classList.remove("scrolled2");
 
     cvButton.classList.remove("border-white");
@@ -202,11 +211,14 @@ contactButton.addEventListener("click", () => {
   contactSection.scrollIntoView({ behavior: "smooth" });
 });
 
-// image auto slide
+// slider
+
 let index = 0;
 const slider = document.getElementById("slider");
 const slideInterval = 6000;
 const totalSlides = slider.children.length;
+const nextButton = document.getElementById("next-image");
+const prevButton = document.getElementById("prev-image");
 
 function autoSlide() {
   index++;
@@ -216,6 +228,27 @@ function autoSlide() {
   slider.style.transform = `translateX(-${index * 20}%)`;
   slider.style.transition = "transform 1.3s ease-in-out";
 }
+
+function nextSlide() {
+  index++;
+  if (index >= totalSlides) {
+    index = 0;
+  }
+  slider.style.transform = `translateX(-${index * 20}%)`;
+  slider.style.transition = "transform 1.3s ease-in-out";
+}
+
+function prevSlide() {
+  index--;
+  if (index < 0) {
+    index = totalSlides - 1;
+  }
+  slider.style.transform = `translateX(-${index * 20}%)`;
+  slider.style.transition = "transform 1.3s ease-in-out";
+}
+
+nextButton.addEventListener("click", nextSlide);
+prevButton.addEventListener("click", prevSlide);
 
 setInterval(autoSlide, slideInterval);
 

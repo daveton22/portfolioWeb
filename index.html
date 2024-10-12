@@ -4,6 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dave-Portfolio</title>
+    <meta
+      name="description"
+      content="Daveton Piesco Far - Far, seorang Front-End Developer junior yang berfokus pada pengembangan website modern menggunakan HTML, CSS, JavaScript, dan Tailwind CSS. Jelajahi portofolio saya di sini."
+    />
+    <meta
+      name="keywords"
+      content="front-end developer, web developer, portfolio, HTML, CSS, JavaScript, Tailwind CSS, freelancer"
+    />
+    <meta name="author" content="Daveton Piesco Far - Far" />
+    <meta
+      property="og:title"
+      content="Portfolio Daveton Piesco Far - Front-End Developer"
+    />
+    <meta
+      property="og:description"
+      content="Kunjungi portfolio saya dan lihat proyek-proyek yang telah saya kerjakan menggunakan HTML, CSS, dan JavaScript."
+    />
+    <meta property="og:image" content="https://yourdomain.com/image.jpg" />
+    <meta property="og:url" content="https://yourdomain.com" />
+    <meta property="og:type" content="website" />
+
     <link rel="stylesheet" href="dist/output.css" />
 
     <link rel="icon" href="/dist/icon-skills/html.png" />
@@ -29,7 +50,7 @@
       <div
         class="mx-12 max-md:mx-5 logo transition-all duration-[800ms] ease-in-out"
       >
-        <h1 class="text-2xl text-[#00ADB5]">&lt;Davefarfar&gt;</h1>
+        <h1 class="text-2xl text-tertiary">&lt;Davefarfar&gt;</h1>
       </div>
       <button
         id="hamburger-button"
@@ -52,10 +73,10 @@
       </button>
       <nav
         id="nav-menu"
-        class="flex max-md:fixed max-md:top-0 max-md:left-full max-md:flex-col max-md:mt-16 max-md:bg-[#23263d] max-md:p-4"
+        class="flex max-md:fixed max-md:top-0 max-md:right-0 max-md:flex-col max-md:mt-16 max-md:bg-primary max-md:p-4 -z-50"
       >
         <ul
-          class="nav-list flex font-bold items-center cursor-pointer max-md:block transition-all duration-[800ms] ease-in-out"
+          class="nav-list flex font-bold items-center cursor-pointer max-md:block transition-all duration-[800ms] ease-in-out max-md:text-white"
         >
           <li class="mx-12 max-md:mx-3 max-md:my-4">
             <a href="#home" class="underline-animation">Home</a>
@@ -72,7 +93,7 @@
         </ul>
         <button
           id="cvButton"
-          class="relative font-bold text-primary px-6 py-2 rounded-md mx-12 max-md:mx-3 overflow-hidden border-solid border-2 border-primary hover:text-white max-md:border-primary max-md:border-solid max-md:border-2 transition-all duration-500"
+          class="relative font-bold text-primary px-6 py-2 rounded-md mx-12 max-md:mx-3 overflow-hidden border-solid border-2 border-primary max-md:text-white hover:text-white max-md:border-secondary max-md:border-solid max-md:border-2 transition-all duration-500"
           onmouseover="hoverLeft()"
           onmouseout="hoverRight()"
         >
@@ -98,13 +119,14 @@
             <h2
               class="text-primary font-bold text-4xl max-md:text-3xl font-robotoMono"
             >
-              <span class="text-[#00ADB5]">Hi,</span> My name is
-              <span class="underline text-[#00ADB5]">Dave</span>
+              <span class="text-tertiary">Hi,</span> My name is
+              <span class="underline text-tertiary">Dave</span>
             </h2>
             <h2
               class="text-primary font-bold text-4xl max-md:text-3xl font-robotoMono"
             >
-              A Front End Developer
+              A Junior Front-End <br />
+              Web Developer
             </h2>
             <div
               id="profileMobile"
@@ -152,20 +174,22 @@
 
       <!-- About -->
       <section
-        class="w-full bg-[#24272c] h-[50rem] max-md:h-[45em] font-quickSand flex flex-col items-center"
+        class="w-full bg-[#24272c] h-[50rem] max-md:h-[45em] font-quickSand flex flex-col items-center shadow-custom-dark"
         id="about"
       >
         <h2
-          class="text-secondary font-bold text-4xl my-[7rem] max-md:mb-1 max-md:mt-[2.5em]"
+          class="text-secondary font-bold text-4xl mt-28 mb-4 max-md:mb-1 max-md:mt-[2.5em]"
         >
           About me
         </h2>
+
+        <hr class="w-[80%] border-t-2 border-gray-600 mb-10" />
 
         <div
           class="justify-center items-center flex h-[25rem] max-md:h-[30rem] max-md:mt-10 max-md:flex-col max-md:items-center"
         >
           <div
-            class="w-[25em] h-[20em] max-md:h-[13em] max-md:w-[18em] rounded-md bg-primary shadow-[5px_5px_16px_1px_rgba(0,0,0,0.3)] overflow-hidden max-md:mb-3"
+            class="w-[25em] h-[20em] max-md:h-[13em] max-md:w-[18em] rounded-md bg-primary shadow-[5px_5px_16px_1px_rgba(0,0,0,0.3)] overflow-hidden max-md:mb-3 relative"
           >
             <div id="slider" class="w-[550%] h-auto flex">
               <div class="w-[20%]">
@@ -204,6 +228,18 @@
                 />
               </div>
             </div>
+            <div
+              id="prev-image"
+              class="w-10 h-full absolute top-0 flex justify-center left-0 items-center hover:bg-gray-800 hover:bg-opacity-50 transition-all duration-200 ease-in-out"
+            >
+              <i class="fa-solid text-white fa-chevron-left fa-2x"></i>
+            </div>
+            <div
+              id="next-image"
+              class="w-10 h-full absolute top-0 right-0 flex justify-center items-center hover:bg-gray-800 hover:bg-opacity-50 transition-all duration-200 ease-in-out"
+            >
+              <i class="fa-solid text-white fa-chevron-right fa-2x"></i>
+            </div>
           </div>
 
           <article class="ml-9 max-md:m-0 max-md:text-center">
@@ -236,13 +272,13 @@
               class="flex mt-4 max-md:flex max-md:justify-center"
             >
               <button
-                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] bg-primary rounded-lg flex justify-center items-center active:scale-[0.9]"
+                class="mx-3 hover:scale-[1.2] transition-transform duration-200 w-[40px] h-[40px] max-md:w-[35px] max-md:h-[35px] rounded-lg flex justify-center items-center active:scale-[0.9]"
                 onclick="window.open('https://www.facebook.com/syntic.loaded', '_blank')"
                 ;
               >
                 <i
                   class="fa-brands fa-facebook fa-2x"
-                  style="color: #292a41"
+                  style="color: #00adb5"
                 ></i>
               </button>
             </div>
@@ -255,11 +291,10 @@
         id="skills"
         class="w-full flex flex-col items-center gap-x-12 bg-secondary font-quickSand"
       >
-        <h2 class="text-primary font-bold text-4xl mt-[2.5em] mb-[1em]">
-          Skills
-        </h2>
+        <h2 class="text-primary font-bold text-4xl mb-4 mt-[2.5em]">Skills</h2>
+        <hr class="w-[80%] border-t-2 border-gray-300 mb-10" />
         <div class="w-full">
-          <h2 class="text-gray-300 text-2xl text-center">
+          <h2 class="text-primary text-2xl text-center">
             Language, Framework & Library
           </h2>
           <div
@@ -274,13 +309,13 @@
                 src="dist/icon-skills/html.png"
                 alt="html"
               />
-              <h2 class="font-bold text-[14px] text-white">HTML</h2>
+              <h2 class="font-bold text-[14px] text-primary">HTML</h2>
             </div>
           </div>
         </div>
 
         <div class="w-full">
-          <h2 class="text-gray-300 text-2xl text-center">Tools</h2>
+          <h2 class="text-primary text-2xl text-center">Tools</h2>
           <div
             id="tools"
             class="flex flex-wrap justify-center w-[80%] p-3 m-auto mb-[5em] gap-12"
@@ -289,7 +324,7 @@
               class="rounded-3xl flex flex-col items-center w-auto h-auto p-1 text-center skillCard"
             >
               <img class="w-12 h-12" src="dist/icon-tools/git.png" alt="git" />
-              <h2 class="font-bold text-[14px] text-white">Git</h2>
+              <h2 class="font-bold text-[14px] text-primary">Git</h2>
             </div>
           </div>
         </div>
@@ -300,15 +335,19 @@
         id="projects"
         class="w-full flex flex-col items-center gap-x-12 h-auto bg-secondary overflow-hidden font-quickSand"
       >
-        <h2 class="text-primary font-bold text-4xl mt-[2.5em] mb-[1em]">
+        <h2 class="text-primary font-bold text-4xl mt-[2.8em] mb-[0.5em]">
           My Project
         </h2>
-        <!-- Make grid with 2 coloumn -->
+
+        <hr class="w-[80%] border-t-2 border-gray-300 mb-10" />
+
         <div
           id="projectList"
           class="grid grid-cols-2 gap-16 max-w-[70%] h-auto md:grid max-md:grid-cols-1 justify-items-center mb-8"
         >
-          <div class="w-[24em] h-auto p-4 scroll relative">
+          <div
+            class="w-[24em] h-auto p-4 scroll relative bg-primary rounded-md shadow-custom-dark"
+          >
             <div class="rounded-lg">
               <img
                 src="/dist/myProject/dicoding.png"
@@ -318,18 +357,18 @@
             </div>
 
             <div class="mt-2">
-              <p class="text-primary text-[13px]">
-                Final Project Website menggunakan html, css dan javascript Pada
-                Kelas submission akhir Front end developer oleh Dicoding
-              </p>
               <a
-                class="text-primary font-semibold hover:opacity-0.8"
+                class="text-tertiary font-semibold hover:opacity-0.8"
                 href="https://daveton22.github.io/FinalProjectDicoding/"
                 target="_blank"
               >
                 Live Preview
                 <i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
+              <p class="text-secondary text-[13px]">
+                Final Project Website menggunakan html, css dan javascript Pada
+                Kelas submission akhir Front end developer oleh Dicoding
+              </p>
             </div>
           </div>
         </div>
@@ -341,7 +380,7 @@
       class="flex justify-center items-center w-full bg-secondary h-auto p-10 max-md:px-0"
     >
       <div
-        class="bg-[#23263d] w-[96%] h-auto flex justify-between rounded-md p-7 max-md:flex-col max-md:w-[90%] max-md:p-5"
+        class="bg-primary w-[96%] h-auto flex justify-between rounded-md p-7 max-md:flex-col max-md:w-[90%] max-md:p-5"
       >
         <h2
           class="font-extrabold text-[24px] hidden pb-2 text-white max-md:block"
@@ -395,7 +434,7 @@
             />
             <button
               type="submit"
-              class="px-6 py-2 text-white bg-primary rounded-md shadow hover:bg-[#ce3d3d] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+              class="px-6 py-2 text-white bg-tertiary rounded-md shadow hover:bg-opacity-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
             >
               Send
             </button>

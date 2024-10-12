@@ -26,9 +26,13 @@ module.exports = {
           "100%": { transform: "rotate(240deg)" },
         },
       },
+      boxShadow: {
+        "custom-dark": "2px 2px 21px -1px rgba(0,0,0,0.75)",
+      },
       colors: {
         primary: "#222831",
         secondary: "#EEEEEE",
+        tertiary: "#00ADB5",
       },
     },
   },
