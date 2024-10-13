@@ -30,29 +30,29 @@ fetch("/dist/json/myproject.json")
 
       document.getElementById("projectList").innerHTML += card;
 
-      window.addEventListener("scroll", () => {
-        const projectCards = document.querySelectorAll(".scroll");
-        projectCards.forEach((card, i) => {
-          // card.classList.add("hidden");
-          const cardPosition = card.offsetTop;
-          const scrollPosition = window.scrollY + window.innerHeight;
-          // console.log(scrollPosition, cardPosition);
+      // window.addEventListener("scroll", () => {
+      //   const projectCards = document.querySelectorAll(".scroll");
+      //   projectCards.forEach((card, i) => {
+      //     // card.classList.add("hidden");
+      //     const cardPosition = card.offsetTop;
+      //     const scrollPosition = window.scrollY + window.innerHeight;
+      //     // console.log(scrollPosition, cardPosition);
 
-          // card.classList.toggle("hidden", !inView); // Tambahkan class 'hidden' jika elemen tidak dalam viewport
+      //     // card.classList.toggle("hidden", !inView); // Tambahkan class 'hidden' jika elemen tidak dalam viewport
 
-          if (scrollPosition > cardPosition) {
-            if (i % 2 === 0) {
-              card.classList.add("project-left");
-              card.classList.remove("project-right");
-            } else {
-              card.classList.add("project-right");
-              card.classList.remove("project-left");
-            }
-          } else if (scrollPosition < cardPosition) {
-            card.classList.remove("project-left", "project-right");
-          }
-        });
-      });
+      //     if (scrollPosition > cardPosition) {
+      //       if (i % 2 === 0) {
+      //         card.classList.add("project-left");
+      //         card.classList.remove("project-right");
+      //       } else {
+      //         card.classList.add("project-right");
+      //         card.classList.remove("project-left");
+      //       }
+      //     } else if (scrollPosition < cardPosition) {
+      //       card.classList.remove("project-left", "project-right");
+      //     }
+      //   });
+      // });
     });
   });
 
@@ -107,6 +107,7 @@ fetch("/dist/json/tools.json")
     });
   });
 
+// menu hamburger button
 const hamButton = document.querySelector("#hamburger-button");
 const hamOpen = document.querySelector("#hamburger-open");
 const hamClose = document.querySelector("#hamburger-close");
@@ -117,12 +118,12 @@ hamButton.addEventListener("click", function () {
   hamOpen.classList.toggle("hidden");
   hamClose.classList.toggle("hidden");
 
-  if (navMenu.classList.contains("menu-open")) {
-    navMenu.classList.remove("menu-open");
-    navMenu.classList.add("menu-closed");
-  } else {
+  if (navMenu.classList.contains("menu-closed")) {
     navMenu.classList.remove("menu-closed");
     navMenu.classList.add("menu-open");
+  } else {
+    navMenu.classList.remove("menu-open");
+    navMenu.classList.add("menu-closed");
   }
 });
 
@@ -148,15 +149,14 @@ document.addEventListener("scroll", () => {
   const navList = document.querySelector(".nav-list");
 
   if (window.scrollY > 20) {
+    cvButton.classList.remove("border-primary");
+    cvButton.classList.add("border-white");
+
+    cvButton.classList.remove("text-primary");
+    cvButton.classList.add("text-white");
     if (window.innerWidth > 1024) {
       navList.classList.add("text-white");
       navList.classList.remove("text-primary");
-
-      cvButton.classList.remove("border-primary");
-      cvButton.classList.add("border-white");
-
-      cvButton.classList.remove("text-primary");
-      cvButton.classList.add("text-white");
     }
 
     if (window.innerWidth < 1024) {
@@ -182,19 +182,19 @@ document.addEventListener("scroll", () => {
 });
 
 // Scroll animation for skill cards
-window.addEventListener("scroll", () => {
-  const skillCards = document.querySelectorAll(".skillCard");
-  skillCards.forEach((skillCard) => {
-    const skillCardPosition = skillCard.offsetTop;
-    const scrollPosition = window.scrollY + window.innerHeight;
+// window.addEventListener("scroll", () => {
+//   const skillCards = document.querySelectorAll(".skillCard");
+//   skillCards.forEach((skillCard) => {
+//     const skillCardPosition = skillCard.offsetTop;
+//     const scrollPosition = window.scrollY + window.innerHeight;
 
-    if (scrollPosition > skillCardPosition) {
-      skillCard.classList.add("animateSkill");
-    } else {
-      skillCard.classList.remove("animateSkill");
-    }
-  });
-});
+//     if (scrollPosition > skillCardPosition) {
+//       skillCard.classList.add("animateSkill");
+//     } else {
+//       skillCard.classList.remove("animateSkill");
+//     }
+//   });
+// });
 
 // cv button links when clicked
 const cvButton = document.querySelector("#cvButton");

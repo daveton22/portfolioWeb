@@ -614,10 +614,6 @@ video {
   z-index: 9999;
 }
 
-.-z-50 {
-  z-index: -50;
-}
-
 .m-0 {
   margin: 0px;
 }
@@ -693,10 +689,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .mt-\[2\.5em\] {
   margin-top: 2.5em;
 }
@@ -717,10 +709,6 @@ video {
   display: none;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
 .h-12 {
   height: 3rem;
 }
@@ -731,10 +719,6 @@ video {
 
 .h-32 {
   height: 8rem;
-}
-
-.h-6 {
-  height: 1.5rem;
 }
 
 .h-\[2000px\] {
@@ -785,8 +769,8 @@ video {
   width: 3rem;
 }
 
-.w-6 {
-  width: 1.5rem;
+.w-16 {
+  width: 4rem;
 }
 
 .w-\[20\%\] {
@@ -920,6 +904,10 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-9 {
+  gap: 2.25rem;
 }
 
 .gap-x-12 {
@@ -1279,14 +1267,33 @@ html {
   left: 0px;
 }
 
-/* .menu-open {
-  transform: translateY(-100%);
-  transition: transform 0.3s ease-in-out;
+@media (max-width: 768px) {
+  .menu-closed {
+    transform: translateX(200%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  }
+
+  .menu-open {
+    transform: translateX(80%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  }
 }
-.menu-closed {
-  transform: translateY(100%);
-  transition: transform 0.3s ease-in-out;
-} */
+
+@media (max-width: 1280px) {
+  .menu-closed {
+    transform: translateX(150%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  }
+
+  .menu-open {
+    transform: translateX(60%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  }
+}
 
 .open {
   opacity: 0;
@@ -1331,6 +1338,7 @@ html {
 
 .scrolled {
   background-color: #222831;
+  z-index: 1000;
   height: 5rem;
   width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -1437,6 +1445,11 @@ html {
   animation: skill-animation-in 0.8s ease-in-out forwards;
 }
 
+.fa-solid {
+  color: #00adb5;
+  font-size: 1.5rem;
+}
+
 .hover\:scale-\[1\.2\]:hover {
   --tw-scale-x: 1.2;
   --tw-scale-y: 1.2;
@@ -1503,12 +1516,8 @@ html {
     position: fixed;
   }
 
-  .max-md\:right-0 {
-    right: 0px;
-  }
-
-  .max-md\:top-0 {
-    top: 0px;
+  .max-md\:top-3 {
+    top: 0.75rem;
   }
 
   .max-md\:m-0 {
@@ -1653,11 +1662,6 @@ html {
 
   .max-md\:border-solid {
     border-style: solid;
-  }
-
-  .max-md\:border-primary {
-    --tw-border-opacity: 1;
-    border-color: rgb(34 40 49 / var(--tw-border-opacity));
   }
 
   .max-md\:border-secondary {

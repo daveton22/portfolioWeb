@@ -5,5 +5,12 @@
     "description": "Website todo list sederhana dari project akhir kelas html oleh MySkill",
     "link": "https://daveton22.github.io/ProjectToDoList/",
     "direction": "right"
+  },
+  {
+    "image": "/dist/myProject/revoUID.png",
+    "title": "Project RevoU",
+    "description": "Website Konversi suhu Celcius to Fahrenheit dan sebaliknya dari project akhir web developer oleh RevoU",
+    "link": "https://daveton22.github.io/web-konversi-suhu/",
+    "direction": "right"
   }
 ]

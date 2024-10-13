@@ -50,30 +50,22 @@
       <div
         class="mx-12 max-md:mx-5 logo transition-all duration-[800ms] ease-in-out"
       >
-        <h1 class="text-2xl text-tertiary">&lt;Davefarfar&gt;</h1>
+        <h1 class="text-2xl font-bold text-tertiary">&lt;Dave&gt;</h1>
       </div>
       <button
         id="hamburger-button"
         class="hidden z-[101] mr-9 cursor-pointer max-md:block"
       >
-        <img
-          class=""
-          id="hamburger-open"
-          src="dist/icon/hamburger.png"
-          alt="icon"
-          width="20"
-        />
-        <img
-          class="hidden"
-          id="hamburger-close"
-          src="dist/icon/close.png"
-          alt="icon"
-          width="20"
-        />
+        <div id="hamburger-open" class="">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div id="hamburger-close" class="hidden">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
       </button>
       <nav
         id="nav-menu"
-        class="flex max-md:fixed max-md:top-0 max-md:right-0 max-md:flex-col max-md:mt-16 max-md:bg-primary max-md:p-4 -z-50"
+        class="flex max-md:fixed max-md:flex-col max-md:mt-16 max-md:bg-primary max-md:p-4 max-md:top-3 menu-closed"
       >
         <ul
           class="nav-list flex font-bold items-center cursor-pointer max-md:block transition-all duration-[800ms] ease-in-out max-md:text-white"
@@ -255,8 +247,8 @@
                 pemahaman mengenai front end web. seperti html, css, javascript,
                 bootstrap, dan tailwind walaupun masih tidak terlalu ahli namun
                 saya masih tetap mengembangkan skill ini agar mampu menguasai
-                nya. saya juga aktif dalam mengikuti kegiatan mengenai seperti
-                kursus maupun organisasi kampus.
+                nya. saya juga aktif dalam mengikuti kegiatan seperti kursus
+                online maupun organisasi kampus.
               </span>
             </p>
             <button
@@ -441,7 +433,7 @@
           </form>
         </div>
         <div class="w-[50%] max-md:w-full">
-          <div>
+          <!-- <div>
             <h2 class="font-extrabold text-[24px] text-white max-md:hidden">
               Hire me
             </h2>
@@ -452,27 +444,23 @@
               voluptas porro dignissimos cupiditate ullam necessitatibus
               repudiandae laborum, harum, tempore accusantium.
             </p>
-          </div>
-          <div class="mt-8">
-            <ul class="flex flex-col gap-5">
+          </div> -->
+          <div class="mt-5">
+            <ul class="flex flex-col gap-9">
               <li class="flex gap-3 items-center">
                 <div
-                  class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center"
+                  class="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center"
                 >
-                  <img
-                    src="dist/icon/telephone.png"
-                    alt="telephone"
-                    class="w-6 h-6"
-                  />
+                  <i class="fa-solid fa-phone"></i>
                 </div>
 
                 <p class="text-white max-md:text-[14px]">+62822-4838-6580</p>
               </li>
               <li class="flex gap-3 items-center">
                 <div
-                  class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center"
+                  class="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center"
                 >
-                  <img src="dist/icon/email.png" alt="email" class="w-6 h-6" />
+                  <i class="fa-solid fa-envelope"></i>
                 </div>
 
                 <p class="text-white max-md:text-[14px]">
@@ -481,9 +469,9 @@
               </li>
               <li class="flex gap-3 items-center">
                 <div
-                  class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center"
+                  class="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center"
                 >
-                  <img src="dist/icon/map.png" alt="map" class="w-6 h-6" />
+                  <i class="fa-solid fa-location-dot"></i>
                 </div>
 
                 <p class="text-white max-md:text-[14px]">
