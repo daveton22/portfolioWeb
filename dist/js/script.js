@@ -196,12 +196,6 @@ document.addEventListener("scroll", () => {
 //   });
 // });
 
-// cv button links when clicked
-const cvButton = document.querySelector("#cvButton");
-cvButton.addEventListener("click", () => {
-  window.open("https://www.youtube.com/", "_blank");
-});
-
 // contact button when clicked go to contact section
 
 const contactButton = document.querySelector("#contactMe");
