@@ -4,13 +4,14 @@ fetch("/dist/json/frontEndProject.json")
   .then((data) => {
     data.forEach((project) => {
       let card = `<div
-            class="w-[24em] max-md:w-[12em] h-auto p-4 scroll relative bg-primary rounded-md shadow-custom-dark max-md:h-auto"
+            class="w-[24em] max-md:w-[12em] h-auto p-4 
+            max-md:p-2 scroll relative bg-primary rounded-md shadow-lg max-md:h-auto"
           >
             <div class= rounded-lg">
               <img
                 src="${project.image}"
                 alt="${project.title}"
-                class="w-full h-[200px] max-md:h-[100px] unded-lg text-white object-cover"
+                class="w-full h-[200px] max-md:h-[130px] unded-lg text-white object-cover"
               />
             </div>
 
@@ -84,8 +85,8 @@ fetch("/dist/json/language.json")
       let card = `<div
               class="rounded-3xl flex flex-col items-center w-auto h-auto p-1 text-center skillCard "
             >
-              <img class="w-12 h-12" src="${language.icons}" alt="${language.name}" />
-              <h2 class="font-bold text-[14px] text-primary">${language.name}</h2>
+              <img class="w-12 max-md:w-8" src="${language.icons}" alt="${language.name}" />
+              <h2 class="font-bold text-[14px] max-md:text-[9px]  text-primary">${language.name}</h2>
             </div>`;
 
       document.getElementById("language").innerHTML += card;
@@ -100,8 +101,8 @@ fetch("/dist/json/tools.json")
       let card = `<div
               class="rounded-3xl flex flex-col items-center w-auto h-auto p-1 text-center skillCard "
             >
-              <img class="w-12 h-12" src="${tool.icons}" alt="${tool.name}" />
-              <h2 class="font-bold text-[14px] text-primary">${tool.name}</h2>
+              <img class="w-12 max-md:w-8" src="${tool.icons}" alt="${tool.name}" />
+              <h2 class="font-bold text-[14px] max-md:text-[9px]  text-primary">${tool.name}</h2>
             </div>`;
 
       document.getElementById("tools").innerHTML += card;
@@ -114,7 +115,7 @@ fetch("/dist/json/posters.json")
   .then((data) => {
     data.forEach((poster) => {
       let posterCard = `
-            <div class="rounded-lg min-w-[180px] max-md:min-w-[100px] snap-start">
+            <div class="rounded-lg min-w-[180px] max-md:min-w-[140px] snap-start">
 
               <img
                 src="${poster.image}"

@@ -98,7 +98,7 @@
       <!-- Home -->
       <section
         id="home"
-        class="flex w-full h-[36em] 2xl:h-[55em] max-md:h-[42em] bg-secondary overflow-hidden max-md:py-32 max-md:px-4"
+        class="flex w-full h-[36em] 2xl:h-[55em] max-md:h-[42em] bg-secondary overflow-hidden max-md:px-4 max-md:py-48"
       >
         <div
           class="flex justify-between items-center w-full max-md:mt-16 max-md:justify-center"
@@ -107,14 +107,13 @@
             class="w-auto ml-[12em] max-md:text-center max-md:m-0 max-md:flex max-md:flex-col max-md:items-center"
           >
             <h2
-              class="text-primary font-bold text-4xl max-md:text-3xl font-robotoMono"
+              class="text-primary font-bold text-4xl max-md:text-2xl font-robotoMono"
             >
               <span class="text-tertiary">Hi,</span> Saya
-              <span class="text-tertiary">Dave</span>
-              Seorang
+              <span class="text-tertiary">Dave</span> Seorang
             </h2>
             <h2
-              class="text-primary font-bold text-4xl max-md:text-3xl font-robotoMono"
+              class="text-primary font-bold text-4xl max-md:text-2xl font-robotoMono"
             >
               Graphic Designer dan<br />
               Front End Web Developer
@@ -296,46 +295,54 @@
           Skills
         </h2>
         <hr class="w-[80%] border-t-2 border-gray-300 mb-10" />
-        <div class="flex w-[70%]">
-          <div class="w-full">
+        <div class="flex w-[70%] max-md:w-full">
+          <div class="w-full max-md:pl-4">
             <h2 class="text-primary text-2xl text-center">
               Front End Languages
             </h2>
             <div
               id="language"
-              class="flex flex-wrap w-[70%] gap-8 m-auto justify-center p-5"
+              class="flex flex-wrap w-[70%] max-md:w-full gap-8 max-md:gap-2 m-auto justify-center p-5"
             >
               <div
-                class="rounded-3xl flex flex-col items-center w-auto h-auto p-1 text-center skillCard"
+                class="rounded-3xl flex flex-col items-center w-auto h-[1em] p-1 text-center skillCard"
               >
                 <img
-                  class="w-12 h-12"
+                  class="w-12 max-md:w-8"
                   src="dist/icon-skills/html.png"
                   alt="html"
                 />
-                <h2 class="font-bold text-[14px] text-primary">HTML</h2>
+                <h2
+                  class="font-bold text-[14px] max-md:text-[9px] text-primary"
+                >
+                  HTML
+                </h2>
               </div>
             </div>
           </div>
 
-          <div class="w-full">
+          <div class="w-full max-md:pr-4">
             <h2 class="text-primary text-2xl text-center">
-              Editing <br />
+              Editing <br class="hidden max-md:block" />
               Tools
             </h2>
             <div
               id="tools"
-              class="flex flex-wrap w-[70%] gap-8 m-auto justify-center p-5"
+              class="flex flex-wrap w-[70%] max-md:w-full gap-8 max-md:gap-2 m-auto justify-center p-5"
             >
               <div
                 class="rounded-3xl flex flex-col items-center w-auto h-auto p-1 text-center skillCard"
               >
                 <img
-                  class="w-12 h-12"
+                  class="w-12 max-md:w-8"
                   src="dist/icon-tools/git.png"
                   alt="git"
                 />
-                <h2 class="font-bold text-[14px] text-primary">Git</h2>
+                <h2
+                  class="font-bold text-[14px] max-md:text-[9px] text-primary"
+                >
+                  Git
+                </h2>
               </div>
             </div>
           </div>
@@ -348,25 +355,25 @@
         class="w-full flex flex-col items-center gap-x-12 h-auto bg-secondary overflow-hidden font-quickSand"
       >
         <h2
-          class="text-primary font-bold text-4xl mt-[2.8em] max-md:mt-[3.5em] mb-[0.5em]"
+          class="text-primary font-bold text-4xl mt-[2.8em] max-md:mt-[3.5em] mb-[0.5em] max-md:text-2xl"
         >
           Web Project
         </h2>
 
-        <hr class="w-[80%] border-t-2 border-gray-300 mb-10" />
+        <hr class="w-[50%] border-t-2 border-gray-300 mb-10" />
 
         <div
           id="frontEndProject"
-          class="grid grid-cols-3 gap-20 max-w-[90%] h-auto max-md:p-5 md:grid max-md:grid-cols-2 justify-items-center mb-8"
+          class="grid grid-cols-3 gap-20 max-w-[90%] h-auto max-md:p-5 md:grid max-md:grid-cols-2 justify-items-center mb-8 max-md:gap-y-5"
         >
           <div
-            class="w-[24em] max-md:w-[12em] h-auto p-4 scroll relative bg-primary rounded-md shadow-custom-dark max-md:h-auto"
+            class="w-[24em] max-md:w-[12em] h-auto p-4 max-md:p-2 scroll relative bg-primary rounded-md shadow-lg max-md:h-auto"
           >
             <div class="rounded-lg">
               <img
                 src="/dist/myProject/dicoding.png"
                 alt="project"
-                class="w-full h-[200px] max-md:h-[100px] rounded-lg text-white object-cover"
+                class="w-full h-[200px] max-md:h-[130px] rounded-lg text-white object-cover"
               />
             </div>
 
@@ -394,17 +401,19 @@
         class="w-full flex flex-col items-center gap-x-12 h-auto bg-secondary overflow-hidden font-quickSand"
       >
         <h2
-          class="text-primary font-bold text-4xl mt-[2.8em] max-md:mt-[3.5em] mb-[0.5em]"
+          class="text-primary font-bold text-4xl mt-[2.8em] max-md:mt-[3.5em] mb-[0.5em] max-md:text-2xl"
         >
           Graphic Design Project
         </h2>
 
-        <hr class="w-[80%] border-t-2 border-gray-300 mb-4" />
+        <hr class="w-[50%] border-t-2 border-gray-300 mb-4" />
 
-        <div id="graphicDesignProject" class="flex flex-col items-center">
+        <div id="graphicDesignProject" cxlss="flex flex-col items-center">
           <!-- Poster project -->
 
-          <h2 class="font-quickSand font-bold text-2xl text-tertiary m-5">
+          <h2
+            class="font-quickSand font-bold text-2xl text-tertiary m-5 max-md:m-1 max-md:text-center"
+          >
             Posters
           </h2>
           <div
@@ -412,7 +421,7 @@
             class="flex w-[72%] max-md:w-[30%] p-1 m-auto gap-x-4 scroll-pl-6"
           >
             <div
-              class="rounded-lg min-w-[180px] max-md:min-w-[100px] snap-start snap-x"
+              class="rounded-lg min-w-[180px] max-md:min-w-[140px] snap-start snap-x"
             >
               <img
                 src="/dist/posters/MakrabIKNA2024-04.jpg"
@@ -422,11 +431,16 @@
             </div>
           </div>
 
-          <h2 class="font-quickSand font-bold text-2xl text-tertiary m-5">
+          <h2
+            class="font-quickSand font-bold text-2xl text-tertiary m-5 max-md:m-1 max-md:text-center"
+          >
             Feed
           </h2>
           <!-- Feed project -->
-          <div id="feedProject" class="w-[72%] flex gap-5">
+          <div
+            id="feedProject"
+            class="w-[72%] flex gap-5 max-md:w-[30%] max-md:gap-1 max-md:m-auto"
+          >
             <div class="">
               <img
                 src="/dist/feed/TemplateIGFeedIKNA-19.jpg"
@@ -434,14 +448,7 @@
                 class="w-64 rounded-lg text-white object-cover"
               />
             </div>
-            <!-- <div class="w-[256px] rounded-lg h-[461px] bg-primary">
-              <img
-                src=""
-                alt="feed"
-                class="w-64 rounded-lg text-white object-cover"
-              />
-            </div> -->
-            <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-5 max-md:gap-1">
               <img
                 src="/dist/feed/feedMakrab-03.jpg"
                 alt="feed"
