@@ -4,13 +4,13 @@ fetch("/dist/json/frontEndProject.json")
   .then((data) => {
     data.forEach((project) => {
       let card = `<div
-            class="w-[24em] max-md:w-[12em] h-auto p-4 scroll relative bg-primary rounded-md shadow-custom-dark"
+            class="w-[24em] max-md:w-[12em] h-auto p-4 scroll relative bg-primary rounded-md shadow-custom-dark max-md:h-auto"
           >
             <div class= rounded-lg">
               <img
                 src="${project.image}"
                 alt="${project.title}"
-                class="w-full h-[200px] rounded-lg text-white object-cover"
+                class="w-full h-[200px] max-md:h-[100px] unded-lg text-white object-cover"
               />
             </div>
 
@@ -23,7 +23,7 @@ fetch("/dist/json/frontEndProject.json")
               Live Preview
               <i class="fa-solid fa-arrow-up-right-from-square"></i
             ></a>
-              <p class="text-secondary text-[13px]">
+              <p class="text-secondary text-[13px] max-md:text-[9px]">
                 ${project.description}
               </p>
             </div>

@@ -1697,6 +1697,22 @@ html {
     height: 45em;
   }
 
+  .max-md\:h-\[20em\] {
+    height: 20em;
+  }
+
+  .max-md\:h-\[100px\] {
+    height: 100px;
+  }
+
+  .max-md\:h-\[10em\] {
+    height: 10em;
+  }
+
+  .max-md\:h-auto {
+    height: auto;
+  }
+
   .max-md\:w-0 {
     width: 0px;
   }
@@ -1821,6 +1837,14 @@ html {
 
   .max-md\:text-\[14px\] {
     font-size: 14px;
+  }
+
+  .max-md\:text-\[5px\] {
+    font-size: 5px;
+  }
+
+  .max-md\:text-\[9px\] {
+    font-size: 9px;
   }
 
   .max-md\:text-white {
