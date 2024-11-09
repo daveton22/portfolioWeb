@@ -1,4 +1,5 @@
-fetch("/dist/json/myproject.json")
+// frontEndProject
+fetch("/dist/json/frontEndProject.json")
   .then((response) => response.json())
   .then((data) => {
     data.forEach((project) => {
@@ -28,7 +29,7 @@ fetch("/dist/json/myproject.json")
             </div>
           </div>`;
 
-      document.getElementById("projectList").innerHTML += card;
+      document.getElementById("frontEndProject").innerHTML += card;
 
       // window.addEventListener("scroll", () => {
       //   const projectCards = document.querySelectorAll(".scroll");
@@ -104,6 +105,29 @@ fetch("/dist/json/tools.json")
             </div>`;
 
       document.getElementById("tools").innerHTML += card;
+    });
+  });
+
+// posters
+fetch("/dist/json/posters.json")
+  .then((response) => response.json())
+  .then((data) => {
+    data.forEach((poster) => {
+      let posterCard = `
+      <div
+        class="rounded-md shadow-lg"
+          >
+        <div class="rounded-lg">
+          <img
+            src="${poster.image}"
+            alt="poster"
+            class="w-48 rounded-lg text-white object-cover"
+          />
+        </div>
+          </div>
+      `;
+
+      document.getElementById("postersProject").innerHTML += posterCard;
     });
   });
 

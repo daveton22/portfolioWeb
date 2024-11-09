@@ -4,7 +4,23 @@
     "icons": "/dist/icon-tools/github.png"
   },
   {
-    "name": "VS Code",
+    "name": "VSCode",
     "icons": "/dist/icon-tools/vscode.png"
+  },
+  {
+    "name": "Canva",
+    "icons": "/dist/icon-tools/canva.png"
+  },
+  {
+    "name": "Figma",
+    "icons": "/dist/icon-tools/figma.png"
+  },
+  {
+    "name": "InDesign",
+    "icons": "/dist/icon-tools/indesign.png"
+  },
+  {
+    "name": "Illustrator",
+    "icons": "/dist/icon-tools/illustrator.png"
   }
 ]
