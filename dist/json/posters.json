@@ -6,7 +6,7 @@
     "image": "/dist/posters/PosterIknaPancasila-02.jpg"
   },
   {
-    "image": "/dist/posters/MakrabIKNA2024-04.jpg"
+    "image": "/dist/posters/posterPo2.jpg"
   },
   {
     "image": "/dist/posters/Posterpaskah.jpg"
@@ -16,5 +16,8 @@
   },
   {
     "image": "/dist/posters/posterSumpahPemuda-01.jpg"
+  },
+  {
+    "image": "/dist/posters/posterPo1.jpg"
   }
 ]

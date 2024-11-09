@@ -114,16 +114,14 @@ fetch("/dist/json/posters.json")
   .then((data) => {
     data.forEach((poster) => {
       let posterCard = `
-      <div
-        class="rounded-md shadow-lg"
-          >
-        <div class="rounded-lg">
-          <img
-            src="${poster.image}"
-            alt="poster"
-            class="w-48 rounded-lg text-white object-cover"
-          />
-        </div>
+            <div class="rounded-lg min-w-[180px] max-md:min-w-[100px] snap-start">
+
+              <img
+                src="${poster.image}"
+                alt="poster"
+                class="w-64 rounded-lg text-white object-cover"
+              />
+            </div>
           </div>
       `;
 

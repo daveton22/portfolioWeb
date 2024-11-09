@@ -191,3 +191,28 @@ html {
   color: #00adb5;
   font-size: 1.5rem;
 }
+
+#postersProject {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+#postersProject::-webkit-scrollbar {
+  height: 8px;
+}
+
+#postersProject::-webkit-scrollbar-thumb {
+  background-color: #047378;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+#postersProject::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+#postersProject::-webkit-scrollbar-thumb:hover {
+  background: #00adb5;
+}
