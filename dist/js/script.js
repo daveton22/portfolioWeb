@@ -4,7 +4,7 @@ fetch("/dist/json/frontEndProject.json")
   .then((data) => {
     data.forEach((project) => {
       let card = `<div
-            class="w-[24em] h-auto p-4 scroll relative bg-primary rounded-md shadow-custom-dark"
+            class="w-[24em] max-md:w-[12em] h-auto p-4 scroll relative bg-primary rounded-md shadow-custom-dark"
           >
             <div class= rounded-lg">
               <img

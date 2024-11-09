@@ -1725,6 +1725,14 @@ html {
     width: 30%;
   }
 
+  .max-md\:w-\[10em\] {
+    width: 10em;
+  }
+
+  .max-md\:w-\[12em\] {
+    width: 12em;
+  }
+
   .max-md\:min-w-\[100px\] {
     min-width: 100px;
   }
@@ -1735,6 +1743,10 @@ html {
 
   .max-md\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .max-md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .max-md\:flex-col {
