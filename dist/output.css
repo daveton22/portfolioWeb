@@ -1592,6 +1592,10 @@ html {
     margin: 0.25rem;
   }
 
+  .max-md\:m-auto {
+    margin: auto;
+  }
+
   .max-md\:mx-3 {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
@@ -1720,6 +1724,18 @@ html {
     width: 100%;
   }
 
+  .max-md\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .max-md\:w-36 {
+    width: 9rem;
+  }
+
+  .max-md\:w-44 {
+    width: 11rem;
+  }
+
   .max-md\:min-w-\[140px\] {
     min-width: 140px;
   }
@@ -1736,6 +1752,10 @@ html {
     flex-direction: column;
   }
 
+  .max-md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .max-md\:items-center {
     align-items: center;
   }
@@ -1750,6 +1770,10 @@ html {
 
   .max-md\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .max-md\:gap-5 {
+    gap: 1.25rem;
   }
 
   .max-md\:gap-y-5 {
