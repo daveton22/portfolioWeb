@@ -1,5 +1,9 @@
 [
   {
+    "icon": "fa-facebook",
+    "url": "https://www.facebook.com/syntic.loaded"
+  },
+  {
     "icon": "fa-instagram",
     "url": "https://www.instagram.com/dave_farfar/"
   },
