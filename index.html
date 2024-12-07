@@ -37,10 +37,12 @@
     />
   </head>
 
-  <body class="max-w-[1920px] h-[2000px] scroll-smooth">
+  <body
+    class="max-w-[1920px] h-[2000px] scroll-smooth flex flex-col bg-secondary"
+  >
     <header
       id="header"
-      class="font-quickSand flex transition-all duration-[800ms] ease-in-out h-16 w-full m-auto justify-between items-center fixed top-0 z-[9999]"
+      class="font-quickSand flex transition-all duration-[800ms] ease-in-out h-16 w-full m-auto items-center justify-between fixed top-0 z-[9999]"
     >
       <!-- Navbar -->
       <div
@@ -123,13 +125,22 @@
             </h2>
             <div
               id="profileMobile"
-              class="w-[230px] border-solid border-[3px] border-primary bg-primary rounded-full hidden max-md:block max-md:my-3"
+              class="w-[270px] h-[270px] relative hidden max-md:block max-md:mt-10"
             >
-              <img
-                src="/dist/profilePicture/picture3.jpg"
-                alt=""
-                class="rounded-full object-cover w-full h-full m-0 p-0"
-              />
+              <div
+                class="w-[270px] h-[270px] absolute border-solid border-[10px] border-primary bg-primary rounded-lg"
+              ></div>
+              <div
+                class="w-[270px] h-[270px] absolute shadow-xl border-solid border-[5px] border-primary bg-secondary rounded-lg"
+              >
+                <div class="absolute -translate-y-[7.1rem]">
+                  <img
+                    src="/dist/profilePicture/profilePicture.png"
+                    alt=""
+                    class="rounded-lg object-cover w-[250px] h-auto m-0 p-0"
+                  />
+                </div>
+              </div>
             </div>
             <p
               class="text-primary font-light text-sm my-3 max-w-[500px] font-robotoMono max-md:max-w-[350px] max-md:text-[13px]"
