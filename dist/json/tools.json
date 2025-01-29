@@ -22,5 +22,13 @@
   {
     "name": "Illustrator",
     "icons": "/dist/icon-tools/illustrator.png"
+  },
+  {
+    "name": "Capcut",
+    "icons": "/dist/icon-tools/capcutLogo.png"
+  },
+  {
+    "name": "Premiere",
+    "icons": "/dist/icon-tools/premiere-pro.png"
   }
 ]
