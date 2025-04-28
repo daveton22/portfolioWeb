@@ -19,5 +19,12 @@
     "description": "Website bookshelf sederhana dengan menggunakan DOM dan Local Storage",
     "link": "https://wisatayogyakarta.vercel.app",
     "direction": "right"
+  },
+  {
+    "image": "/dist/myProject/ikna.png",
+    "title": "Project Web desain UKM IKNA",
+    "description": "Website UKM IKNA menggunakan HTML, SASS, dan Javascript (dalam progress)",
+    "link": "https://ikna-yogyakarta.vercel.app",
+    "direction": "right"
   }
 ]
