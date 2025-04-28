@@ -17,7 +17,7 @@
     "image": "/dist/myProject/webBookShelf.png",
     "title": "Project Book Shelf",
     "description": "Website bookshelf sederhana dengan menggunakan DOM dan Local Storage",
-    "link": "https://daveton22.github.io/web-konversi-suhu/",
+    "link": "https://wisatayogyakarta.vercel.app",
     "direction": "right"
   }
 ]
